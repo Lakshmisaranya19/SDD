@@ -1,0 +1,206 @@
+﻿{
+ "headings": [
+  {
+   "tag": "H1",
+   "text": "Caching",
+   "cls": "title"
+  },
+  {
+   "tag": "H2",
+   "text": "The same few things, over and over",
+   "cls": "guide__title"
+  }
+ ],
+ "live": [
+  {
+   "tag": "DIV",
+   "cls": "toast",
+   "live": "polite",
+   "role": "status"
+  }
+ ],
+ "dialog": {
+  "attrs": {
+   "class": "sx__dialog",
+   "role": "dialog",
+   "aria-modal": "true",
+   "aria-label": "Search the course"
+  },
+  "parentCls": "sx",
+  "parentAttrs": {
+   "class": "sx",
+   "hidden": ""
+  }
+ },
+ "diagram": {
+  "attrs": {
+   "class": "stage-svg",
+   "xmlns": "http://www.w3.org/2000/svg",
+   "preserveAspectRatio": "xMidYMid meet",
+   "role": "img",
+   "viewBox": "-524.89 -112.44 973.85 335.38"
+  },
+  "childCount": 194,
+  "labels": [],
+  "texts": [
+   "App",
+   "Server",
+   "database",
+   "92%",
+   "20,000 users",
+   "WHO READS WHAT",
+   "top 1% of products ΓåÆ 60% of reads",
+   "top 10% of products ΓåÆ 90% of reads",
+   "the same rows, read again and again"
+  ]
+ },
+ "timeline": {
+  "attrs": {
+   "class": "card timeline is-tight is-fresh",
+   "id": "timeline"
+  },
+  "listRole": {
+   "class": "timeline__steps"
+  },
+  "btnAttrs": [
+   {
+    "data-step": "0",
+    "title": "Every page hits the database"
+   },
+   {
+    "data-step": "1",
+    "title": "The same few things, over and over"
+   }
+  ]
+ },
+ "guide": {
+  "attrs": {
+   "class": "card guide",
+   "id": "guide"
+  },
+  "contentAttrs": {
+   "class": "guide__content is-in",
+   "style": "--slide: 0px;"
+  }
+ },
+ "skipLinks": [
+  {
+   "text": "System Design",
+   "href": "#/",
+   "cls": "brand"
+  },
+  {
+   "text": "How a Request Travels",
+   "href": "#/request-lifecycle/1",
+   "cls": ""
+  },
+  {
+   "text": "Latency & Throughput",
+   "href": "#/latency-throughput/1",
+   "cls": ""
+  },
+  {
+   "text": "Napkin Math",
+   "href": "#/napkin-math/1",
+   "cls": ""
+  },
+  {
+   "text": "Vertical vs Horizontal",
+   "href": "#/vertical-horizontal/1",
+   "cls": ""
+  },
+  {
+   "text": "Load Balancing",
+   "href": "#/load-balancing/1",
+   "cls": ""
+  }
+ ],
+ "tabbables": 78,
+ "meta": [
+  {
+   "k": "viewport",
+   "v": "width=device-width, initial-scale=1.0, viewport-fit=cover"
+  },
+  {
+   "k": "description",
+   "v": "An interactive system design course: each idea is an animated diagram you step t"
+  },
+  {
+   "k": "author",
+   "v": "Dilum Sanjaya"
+  },
+  {
+   "k": "theme-color",
+   "v": "#f4ebe0"
+  },
+  {
+   "k": "og:type",
+   "v": "website"
+  },
+  {
+   "k": "og:site_name",
+   "v": "System Design"
+  },
+  {
+   "k": "og:title",
+   "v": "System Design ΓÇö an interactive course"
+  },
+  {
+   "k": "og:description",
+   "v": "An interactive system design course: each idea is an animated diagram you step t"
+  },
+  {
+   "k": "og:url",
+   "v": "https://designed-to-scale.vercel.app/"
+  },
+  {
+   "k": "og:image",
+   "v": "https://designed-to-scale.vercel.app/og.jpg"
+  },
+  {
+   "k": "og:image:type",
+   "v": "image/jpeg"
+  },
+  {
+   "k": "og:image:width",
+   "v": "1200"
+  },
+  {
+   "k": "og:image:height",
+   "v": "630"
+  },
+  {
+   "k": "og:image:alt",
+   "v": "System Design: an isometric diagram of users, a load balancer and three servers."
+  },
+  {
+   "k": "og:locale",
+   "v": "en_US"
+  },
+  {
+   "k": "twitter:card",
+   "v": "summary_large_image"
+  },
+  {
+   "k": "twitter:creator",
+   "v": "@DilumSanjaya"
+  },
+  {
+   "k": "twitter:title",
+   "v": "System Design ΓÇö an interactive course"
+  },
+  {
+   "k": "twitter:description",
+   "v": "An interactive system design course: each idea is an animated diagram you step t"
+  },
+  {
+   "k": "twitter:image",
+   "v": "https://designed-to-scale.vercel.app/og.jpg"
+  },
+  {
+   "k": "twitter:image:alt",
+   "v": "System Design: an isometric diagram of users, a load balancer and three servers."
+  }
+ ],
+ "canonical": "https://designed-to-scale.vercel.app/"
+}

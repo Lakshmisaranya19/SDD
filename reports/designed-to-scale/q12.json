@@ -1,0 +1,22 @@
+﻿{
+ "iw": 1024,
+ "ih": 768,
+ "layout": "tablet",
+ "attr": "tablet",
+ "matches1200": true,
+ "sel": true,
+ "transform": "none",
+ "left": "0px",
+ "vis": "visible",
+ "inline": null,
+ "rect": 0,
+ "sheets": 1,
+ "sidebars": 1,
+ "cssRules": [
+  ".sidebar { flex-direction: column; min-height: 0px; padding-block: 26px 14px; padding-inline: 25px 13px; display: flex; }",
+  ":root:not([data-layout=\"desktop\"]) .sidebar { top: 0px; bottom: 0px; z-index: 45; width: min(330px, 88vw); padding-block: 14px calc(12px + env(safe-area-inset-b",
+  ":root.is-drawer .sidebar { visibility: visible; transition: transform 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); transform: none; }",
+  ":root[dir=\"rtl\"]:not([data-layout=\"desktop\"]) .sidebar { transform: translate(105%); }",
+  ":root[dir=\"rtl\"].is-drawer .sidebar { transform: none; }"
+ ]
+}

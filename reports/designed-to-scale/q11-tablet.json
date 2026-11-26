@@ -1,0 +1,73 @@
+﻿{
+ "closed": {
+  "htmlClass": "",
+  "menuExpanded": "false",
+  "sidebarClass": "sidebar",
+  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+  "left": "0px",
+  "visibility": "visible",
+  "opacity": "1",
+  "rect": {
+   "x": 0,
+   "w": 330
+  },
+  "backdrop": {
+   "display": "block",
+   "opacity": "0",
+   "w": 1024
+  },
+  "focus": "BODY",
+  "navVisible": "none"
+ },
+ "open": {
+  "htmlClass": "is-drawer",
+  "menuExpanded": "true",
+  "sidebarClass": "sidebar",
+  "transform": "none",
+  "left": "0px",
+  "visibility": "visible",
+  "opacity": "1",
+  "rect": {
+   "x": 0,
+   "w": 330
+  },
+  "backdrop": {
+   "display": "block",
+   "opacity": "0",
+   "w": 1024
+  },
+  "focus": "drawer-close",
+  "navVisible": "none"
+ },
+ "openAside": {
+  "ariaLabel": "Course",
+  "progress": "Progress 1 / 40 Foundations1/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4",
+  "lessonCount": 40
+ },
+ "afterClose": {
+  "htmlClass": "",
+  "menuExpanded": "false",
+  "sidebarClass": "sidebar",
+  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+  "left": "0px",
+  "visibility": "visible",
+  "opacity": "1",
+  "rect": {
+   "x": 0,
+   "w": 330
+  },
+  "backdrop": {
+   "display": "block",
+   "opacity": "0",
+   "w": 1024
+  },
+  "focus": "menu-btn",
+  "navVisible": "none"
+ },
+ "lessonNav": {
+  "beforeHash": "#/design-chat/1",
+  "afterHash": "#/sharding/1",
+  "drawerClosed": true,
+  "h1": "Sharding"
+ }
+}

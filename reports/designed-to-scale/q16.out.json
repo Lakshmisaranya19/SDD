@@ -1,0 +1,86 @@
+﻿{
+ "start": {
+  "hash": "#/sharding/1",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "1 Too big",
+  "done": "[\"request-lifecycle\"]",
+  "progress": "Progress 1 / 40"
+ },
+ "invalidLesson": {
+  "hash": "#/does-not-exist/5",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "1 Too big",
+  "done": "[\"request-lifecycle\"]",
+  "progress": "Progress 1 / 40"
+ },
+ "stepClamp": {
+  "hash": "#/sharding/999",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "9 Recap",
+  "done": "[\"request-lifecycle\",\"sharding\"]",
+  "progress": "Progress 2 / 40"
+ },
+ "malformed": {
+  "hash": "#/sharding",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "9 Recap",
+  "done": "[\"request-lifecycle\",\"sharding\"]",
+  "progress": "Progress 2 / 40"
+ },
+ "keyRight": {
+  "hash": "#/sharding/1",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "1 Too big",
+  "done": "[\"request-lifecycle\",\"sharding\"]",
+  "progress": "Progress 2 / 40"
+ },
+ "keyLeft": {
+  "hash": "#/sharding/1",
+  "h1": "Sharding",
+  "title": "Sharding ┬╖ System Design",
+  "step": "1 Too big",
+  "done": "[\"request-lifecycle\",\"sharding\"]",
+  "progress": "Progress 2 / 40"
+ },
+ "space": {
+  "labelBefore": "Play",
+  "labelAfter": "Play",
+  "cls": "tool is-on"
+ },
+ "progressBefore": {
+  "expanded": "false",
+  "cls": "card progress",
+  "height": 41
+ },
+ "progressAfter": {
+  "expanded": "true",
+  "cls": "card progress is-open",
+  "height": 41,
+  "text": "Progress 2 / 40 Foundations1/3Scaling0/5Data & Storage1/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4",
+  "actions": [
+   "Progress 2 / 40"
+  ]
+ },
+ "searchBeforeEnter": {
+  "sel": "Replication03 ┬╖ Data & Storage Keep copies of the database on several machines ΓÇö for more reads and ",
+  "count": 26,
+  "groups": [
+   "Lessons1",
+   "Stepstop 25 of 28"
+  ]
+ },
+ "searchAfterEnter": {
+  "hash": "#/replication/1",
+  "h1": "Replication",
+  "title": "Replication ┬╖ System Design",
+  "step": "1 One DB",
+  "done": "[\"request-lifecycle\",\"sharding\"]",
+  "progress": "Progress 2 / 40"
+ },
+ "searchClosed": true
+}

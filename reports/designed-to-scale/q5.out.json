@@ -1,0 +1,144 @@
+﻿{
+ "atLastStep": {
+  "hash": "#/request-lifecycle/10",
+  "done": "[\"request-lifecycle\"]",
+  "progress": "Progress 1 / 40",
+  "marks": [],
+  "nextLabel": "Latency & Throughput",
+  "backDisabled": false
+ },
+ "nextAtLast": {
+  "text": "Latency & Throughput",
+  "disabled": false,
+  "href": null
+ },
+ "afterNextAtLast": {
+  "hash": "#/latency-throughput/1",
+  "done": "[\"request-lifecycle\"]",
+  "progress": "Progress 1 / 40",
+  "marks": [],
+  "nextLabel": "Next: Busier",
+  "backDisabled": true
+ },
+ "timeline": [
+  {
+   "tag": "LI",
+   "text": "1 Two numbers",
+   "cls": "is-current",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "1 Two numbers",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "2 Busier",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2 Busier",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "3 Hockey stick",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "3 Hockey stick",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "4 Averages lie",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "4 Averages lie",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "5 Add capacity",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "5 Add capacity",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "6 Distance",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "6 Distance",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "LI",
+   "text": "7 In flight",
+   "cls": "",
+   "current": null,
+   "sel": null
+  },
+  {
+   "tag": "BUTTON",
+   "text": "7 In flight",
+   "cls": "",
+   "current": null,
+   "sel": null
+  }
+ ],
+ "deepLinkLesson": {
+  "hash": "#/load-balancing/3",
+  "title": "Load Balancing ┬╖ System Design",
+  "module": "02. Scaling / Lesson 2 of 5 Load Balancing 12 min Beginner 12 steps One front door for many servers ΓÇö and the rules for who gets which request.",
+  "h1": "Load Balancing",
+  "step": "Round robin: take turns",
+  "steps": [
+   "1 Hot spot",
+   "2 Add an LB",
+   "3 Round robin",
+   "4 Heavy work",
+   "5 Least conns",
+   "6 Health checks",
+   "7 LB fails",
+   "8 Standby",
+   "9 Failover",
+   "10 By path",
+   "11 Deploy",
+   "12 Recap"
+  ]
+ }
+}

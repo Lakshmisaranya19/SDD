@@ -1,0 +1,121 @@
+﻿{
+ "html": "\n    <div class=\"crumb\">01. Foundations <span>/</span> Lesson 1 of 3</div>\n    <div class=\"lesson-head__row\">\n      <h1 class=\"title\" style=\"font-size: 23.95px;\">How a Request Travels</h1>\n      <div class=\"tags\">\n        <span class=\"tag tag--sand\"><svg class=\"i \" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M12 6v6l4 2\"></path></svg>10 min</span>\n        <span class=\"tag tag--mint\"><svg class=\"i \" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2 20h.01\"></path><path d=\"M7 20v-4\"></path><path d=\"M12 20v-8\"></path><path d=\"M17 20V8\"></path><path d=\"M22 4v16\"></path></svg>Beginner</span>\n        <span class=\"tag tag--violet\"><svg class=\"i \" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 5h10\"></path><path d=\"M11 12h10\"></path><path d=\"M11 19h10\"></path><path d=\"M4 4h1v5\"></path><path d=\"M4 9h2\"></path><path d=\"M6.5 20H3.4c0-1 2.6-1.925 2.6-3.5a1.5 1.5 0 0 0-2.6-1.02\"></path></svg>10 steps</span>\n      </div>\n    </div>\n    <p class=\"subtitle\" title=\"Follow one page load hop by hop ΓÇö and find out where the time really goes.\" style=\"font-size: 11.39px;\">Follow one page load hop by hop ΓÇö and find out where the time really goes.</p>",
+ "children": [
+  {
+   "tag": "DIV",
+   "cls": "crumb"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "text": "/"
+  },
+  {
+   "tag": "DIV",
+   "cls": "lesson-head__row"
+  },
+  {
+   "tag": "H1",
+   "cls": "title",
+   "text": "How a Request Travels"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tags"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tag tag--sand"
+  },
+  {
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]"
+  },
+  {
+   "tag": "circle",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tag tag--mint"
+  },
+  {
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]"
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tag tag--violet"
+  },
+  {
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]"
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "path",
+   "cls": "[object SVGAnimatedString]",
+   "text": ""
+  },
+  {
+   "tag": "P",
+   "cls": "subtitle",
+   "text": "Follow one page load hop by hop ΓÇö and find out where the time really goes."
+  }
+ ]
+}

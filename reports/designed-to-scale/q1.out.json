@@ -1,0 +1,1089 @@
+﻿{
+ "title": "How a Request Travels ┬╖ System Design",
+ "url": "https://designed-to-scale.vercel.app/",
+ "lang": "en",
+ "dir": "",
+ "theme": null,
+ "layout": "tablet",
+ "startLang": "en",
+ "bodyClass": "",
+ "storage": {
+  "sdt:last": "{\"lessonId\":\"request-lifecycle\",\"step\":0}",
+  "sdt:recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":0}]"
+ },
+ "headings": [
+  {
+   "tag": "H1",
+   "cls": "title",
+   "text": "How a Request Travels"
+  },
+  {
+   "tag": "H2",
+   "cls": "guide__title",
+   "text": "Users say the shop feels slow"
+  }
+ ],
+ "links": [
+  {
+   "href": "#/",
+   "text": "System Design",
+   "cls": "brand"
+  },
+  {
+   "href": "https://x.com/DilumSanjaya",
+   "text": "designed by@DilumSanjaya",
+   "cls": "credit"
+  },
+  {
+   "href": "#/request-lifecycle/1",
+   "text": "How a Request Travels",
+   "cls": "btn-pop"
+  },
+  {
+   "href": "#/latency-throughput/1",
+   "text": "Latency & Throughput",
+   "cls": ""
+  },
+  {
+   "href": "#/napkin-math/1",
+   "text": "Napkin Math",
+   "cls": ""
+  },
+  {
+   "href": "#/vertical-horizontal/1",
+   "text": "Vertical vs Horizontal",
+   "cls": ""
+  },
+  {
+   "href": "#/load-balancing/1",
+   "text": "Load Balancing",
+   "cls": ""
+  },
+  {
+   "href": "#/stateless/1",
+   "text": "Stateless Services",
+   "cls": ""
+  },
+  {
+   "href": "#/caching/1",
+   "text": "Caching",
+   "cls": ""
+  },
+  {
+   "href": "#/cdn/1",
+   "text": "Content Delivery",
+   "cls": ""
+  },
+  {
+   "href": "#/sql-nosql/1",
+   "text": "SQL vs NoSQL",
+   "cls": ""
+  },
+  {
+   "href": "#/indexes/1",
+   "text": "Indexes",
+   "cls": ""
+  },
+  {
+   "href": "#/storage-engines/1",
+   "text": "Storage Engines",
+   "cls": ""
+  },
+  {
+   "href": "#/replication/1",
+   "text": "Replication",
+   "cls": ""
+  },
+  {
+   "href": "#/sharding/1",
+   "text": "Sharding",
+   "cls": ""
+  },
+  {
+   "href": "#/consistent-hashing/1",
+   "text": "Consistent Hashing",
+   "cls": ""
+  },
+  {
+   "href": "#/unique-ids/1",
+   "text": "Unique IDs at Scale",
+   "cls": ""
+  },
+  {
+   "href": "#/cap/1",
+   "text": "CAP & Consistency",
+   "cls": ""
+  },
+  {
+   "href": "#/consensus/1",
+   "text": "Consensus & Leaders",
+   "cls": ""
+  },
+  {
+   "href": "#/transactions/1",
+   "text": "Transactions & Isolation",
+   "cls": ""
+  },
+  {
+   "href": "#/files/1",
+   "text": "Files & Media",
+   "cls": ""
+  },
+  {
+   "href": "#/apis/1",
+   "text": "REST, RPC & GraphQL",
+   "cls": ""
+  },
+  {
+   "href": "#/queues/1",
+   "text": "Message Queues",
+   "cls": ""
+  },
+  {
+   "href": "#/pubsub/1",
+   "text": "Pub/Sub & Events",
+   "cls": ""
+  },
+  {
+   "href": "#/realtime/1",
+   "text": "Real-time Updates",
+   "cls": ""
+  },
+  {
+   "href": "#/redundancy/1",
+   "text": "Redundancy & Failover",
+   "cls": ""
+  },
+  {
+   "href": "#/rate-limiting/1",
+   "text": "Rate Limiting",
+   "cls": ""
+  },
+  {
+   "href": "#/timeouts-retries/1",
+   "text": "Timeouts & Retries",
+   "cls": ""
+  },
+  {
+   "href": "#/observability/1",
+   "text": "Observability",
+   "cls": ""
+  },
+  {
+   "href": "#/microservices/1",
+   "text": "Monolith vs Microservices",
+   "cls": ""
+  },
+  {
+   "href": "#/service-discovery/1",
+   "text": "Service Discovery",
+   "cls": ""
+  },
+  {
+   "href": "#/sagas/1",
+   "text": "Sagas & Distributed Tx",
+   "cls": ""
+  },
+  {
+   "href": "#/batch-stream/1",
+   "text": "Batch & Stream Processing",
+   "cls": ""
+  },
+  {
+   "href": "#/authentication/1",
+   "text": "Authentication",
+   "cls": ""
+  },
+  {
+   "href": "#/authorization/1",
+   "text": "Authorization",
+   "cls": ""
+  },
+  {
+   "href": "#/encryption/1",
+   "text": "Encryption & Secrets",
+   "cls": ""
+  },
+  {
+   "href": "#/testing/1",
+   "text": "Testing",
+   "cls": ""
+  },
+  {
+   "href": "#/cicd/1",
+   "text": "CI/CD & Deployments",
+   "cls": ""
+  },
+  {
+   "href": "#/hld-lld/1",
+   "text": "HLD & LLD",
+   "cls": ""
+  },
+  {
+   "href": "#/design-url-shortener/1",
+   "text": "Design a URL Shortener",
+   "cls": ""
+  },
+  {
+   "href": "#/design-news-feed/1",
+   "text": "Design a News Feed",
+   "cls": ""
+  },
+  {
+   "href": "#/design-chat/1",
+   "text": "Design a Chat System",
+   "cls": ""
+  },
+  {
+   "href": "https://x.com/DilumSanjaya",
+   "text": "designed by@DilumSanjaya",
+   "cls": "credit"
+  }
+ ],
+ "buttons": [
+  {
+   "text": "",
+   "aria": "Open the course menu",
+   "cls": "menu-btn",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "Learn",
+   "aria": null,
+   "cls": "nav__item btn-pop is-active",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Practice",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Design Lab",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Cheatsheets",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Search lessons & conceptsΓÇª\n        Ctrl K",
+   "aria": "Search the course",
+   "cls": "search",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "EN",
+   "aria": "Language: English",
+   "cls": "lang__btn",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "EnglishEnglish",
+   "aria": null,
+   "cls": "lang__item is-on",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "ES\n                Espa├▒olSpanish",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "PT\n                Portugu├¬sPortuguese",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "FR\n                Fran├ºaisFrench",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "IT\n                ItalianoItalian",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "DE\n                DeutschGerman",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "NL\n                NederlandsDutch",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "PL\n                PolskiPolish",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "TR\n                T├╝rk├ºeTurkish",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "ID\n                Bahasa IndonesiaIndonesian",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "VI\n                Tiß║┐ng Viß╗çtVietnamese",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "EL\n                ╬ò╬╗╬╗╬╖╬╜╬╣╬║╬¼Greek",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "UA\n                ╨ú╨║╤Ç╨░╤ù╨╜╤ü╤î╨║╨░Ukrainian",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "RU\n                ╨á╤â╤ü╤ü╨║╨╕╨╣Russian",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "τ«Ç\n                τ«ÇΣ╜ôΣ╕¡µûçChinese (Simplified)",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "τ╣ü\n                τ╣üΘ½öΣ╕¡µûçChinese (Traditional)",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "JA\n                µùÑµ£¼Φ¬₧Japanese",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "KO\n                φò£Ω╡¡∞û┤Korean",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "HI\n                αñ╣αñ┐αñ¿αÑìαñªαÑÇHindi",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "AR\n                ╪º┘ä╪╣╪▒╪¿┘è╪⌐Arabic",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "HE\n                ╫ó╫æ╫¿╫Ö╫¬Hebrew",
+   "aria": null,
+   "cls": "lang__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "",
+   "aria": "Switch to dark theme",
+   "cls": "theme-btn",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Learn",
+   "aria": null,
+   "cls": "nav__item btn-pop is-active",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Practice",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Design Lab",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Cheatsheets",
+   "aria": null,
+   "cls": "nav__item ",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "",
+   "aria": "Close the course menu",
+   "cls": "drawer-close",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "01. Foundations\n          0/3",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "true"
+  },
+  {
+   "text": "02. Scaling\n          0/5",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "03. Data & Storage\n          0/11",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "04. Communication\n          0/4",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "05. Reliability\n          0/4",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "06. Architecture\n          0/4",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "07. Security\n          0/3",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "08. Shipping\n          0/2",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "09. Whole Systems\n          0/4",
+   "aria": null,
+   "cls": "mod__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "Progress\n      0 / 40",
+   "aria": null,
+   "cls": "progress__head",
+   "disabled": false,
+   "pressed": null,
+   "expanded": "false"
+  },
+  {
+   "text": "English",
+   "aria": "Language: English",
+   "cls": "lang__btn",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Fit",
+   "aria": null,
+   "cls": "tool tool--fit",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Replay",
+   "aria": null,
+   "cls": "tool",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Pause",
+   "aria": null,
+   "cls": "tool",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "",
+   "aria": "Show the diagram full screen",
+   "cls": "tool tool--expand",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "1\n              Hit Enter",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "2\n              Find address",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "3\n              Connect",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "4\n              Request",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "5\n              Fetch data",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "6\n              Response",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "7\n              More files",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "8\n              Slow query",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "9\n              Far away",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "10\n              Recap",
+   "aria": null,
+   "cls": "",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Back",
+   "aria": null,
+   "cls": "btn-ghost",
+   "disabled": true,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Next: Find address",
+   "aria": null,
+   "cls": "btn-pop btn-next",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "Clear",
+   "aria": "Clear search",
+   "cls": "sx__clear",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  },
+  {
+   "text": "esc",
+   "aria": "Close search",
+   "cls": "sx__esc",
+   "disabled": false,
+   "pressed": null,
+   "expanded": null
+  }
+ ],
+ "landmarks": [
+  {
+   "tag": "HEADER",
+   "role": null,
+   "id": "",
+   "cls": "topbar",
+   "label": null
+  },
+  {
+   "tag": "NAV",
+   "role": null,
+   "id": "",
+   "cls": "nav",
+   "label": null
+  },
+  {
+   "tag": "DIV",
+   "role": "menu",
+   "id": "lang-menu",
+   "cls": "lang__menu",
+   "label": "Language"
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item is-on",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "BUTTON",
+   "role": "menuitemradio",
+   "id": "",
+   "cls": "lang__item ",
+   "label": null
+  },
+  {
+   "tag": "ASIDE",
+   "role": null,
+   "id": "sidebar",
+   "cls": "sidebar",
+   "label": "Course"
+  },
+  {
+   "tag": "NAV",
+   "role": null,
+   "id": "",
+   "cls": "drawer-nav",
+   "label": null
+  },
+  {
+   "tag": "NAV",
+   "role": null,
+   "id": "course",
+   "cls": "course",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod is-open",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "mod",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "progress",
+   "cls": "card progress",
+   "label": null
+  },
+  {
+   "tag": "MAIN",
+   "role": null,
+   "id": "",
+   "cls": "sheet",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "",
+   "cls": "card stage",
+   "label": null
+  },
+  {
+   "tag": "svg",
+   "role": "img",
+   "id": "",
+   "cls": {},
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "timeline",
+   "cls": "card timeline is-fresh is-tight",
+   "label": null
+  },
+  {
+   "tag": "ASIDE",
+   "role": null,
+   "id": "",
+   "cls": "rail",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "guide",
+   "cls": "card guide",
+   "label": null
+  },
+  {
+   "tag": "SECTION",
+   "role": null,
+   "id": "goals",
+   "cls": "card goals is-fresh",
+   "label": null
+  },
+  {
+   "tag": "DIV",
+   "role": "status",
+   "id": "",
+   "cls": "toast",
+   "label": null
+  },
+  {
+   "tag": "DIV",
+   "role": "dialog",
+   "id": "",
+   "cls": "sx__dialog",
+   "label": "Search the course"
+  },
+  {
+   "tag": "INPUT",
+   "role": "combobox",
+   "id": "",
+   "cls": "sx__input",
+   "label": null
+  },
+  {
+   "tag": "DIV",
+   "role": "listbox",
+   "id": "sx-list",
+   "cls": "sx__list",
+   "label": "Results"
+  }
+ ],
+ "forms": [],
+ "appHtmlLength": 84653
+}

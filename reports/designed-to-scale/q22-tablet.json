@@ -1,0 +1,32 @@
+﻿{
+ "hash": "#/batch-stream/1",
+ "steps": 14,
+ "timeline": {
+  "clientW": 609,
+  "scrollW": 609,
+  "overflowX": "visible",
+  "scrollable": false
+ },
+ "chips": null,
+ "stage": {
+  "w": 638,
+  "h": 449
+ },
+ "svg": {
+  "w": 621,
+  "h": 347,
+  "vb": "-551.19 -250.17 955.38 533.85"
+ },
+ "pager": {
+  "cls": "guide__nav",
+  "position": "static",
+  "rect": {
+   "y": 424,
+   "h": null
+  }
+ },
+ "pageScroll": {
+  "scrollH": 768,
+  "clientH": 768
+ }
+}

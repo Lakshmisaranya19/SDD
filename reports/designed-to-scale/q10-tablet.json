@@ -1,0 +1,171 @@
+﻿{
+ "vw": 1024,
+ "vh": 768,
+ "layout": "tablet",
+ "htmlClass": "",
+ "bodyClass": "",
+ "topbar": {
+  "w": 1024,
+  "h": 54,
+  "x": 0,
+  "y": 0,
+  "display": "flex",
+  "visible": true
+ },
+ "brand": {
+  "w": 184,
+  "h": 30,
+  "x": 60,
+  "y": 12,
+  "display": "flex",
+  "visible": true
+ },
+ "nav": {
+  "w": 0,
+  "h": 0,
+  "x": 0,
+  "y": 0,
+  "display": "none",
+  "visible": false
+ },
+ "menuBtn": {
+  "w": 36,
+  "h": 36,
+  "x": 12,
+  "y": 9,
+  "display": "grid",
+  "visible": true
+ },
+ "searchBtn": {
+  "w": 260,
+  "h": 34,
+  "x": 458,
+  "y": 10,
+  "display": "flex",
+  "visible": true
+ },
+ "lang": {
+  "w": 81,
+  "h": 34,
+  "x": 730,
+  "y": 10,
+  "display": "block",
+  "visible": true
+ },
+ "credit": {
+  "w": 143,
+  "h": 34,
+  "x": 869,
+  "y": 10,
+  "display": "flex",
+  "visible": true
+ },
+ "sidebar": {
+  "w": 330,
+  "h": 768,
+  "x": 0,
+  "y": 0,
+  "display": "flex",
+  "visible": true
+ },
+ "sheet": {
+  "w": 672,
+  "h": 688,
+  "x": 12,
+  "y": 66,
+  "display": "flex",
+  "visible": true
+ },
+ "sheetGrid": "none",
+ "sheetChildren": [
+  {
+   "cls": "lesson-head is-fresh",
+   "id": "head",
+   "w": 638,
+   "h": 99,
+   "x": 29,
+   "y": 71,
+   "display": "block",
+   "visible": true
+  },
+  {
+   "cls": "card stage",
+   "id": "",
+   "w": 638,
+   "h": 440,
+   "x": 29,
+   "y": 178,
+   "display": "block",
+   "visible": true
+  },
+  {
+   "cls": "card timeline is-tight is-fresh",
+   "id": "timeline",
+   "w": 638,
+   "h": 107,
+   "x": 29,
+   "y": 635,
+   "display": "block",
+   "visible": true
+  }
+ ],
+ "head": {
+  "w": 638,
+  "h": 99,
+  "x": 29,
+  "y": 71,
+  "display": "block",
+  "visible": true
+ },
+ "stage": {
+  "w": 638,
+  "h": 440,
+  "x": 29,
+  "y": 178,
+  "display": "block",
+  "visible": true
+ },
+ "timeline": {
+  "w": 638,
+  "h": 107,
+  "x": 29,
+  "y": 635,
+  "display": "block",
+  "visible": true
+ },
+ "rail": {
+  "w": 340,
+  "h": 714,
+  "x": 684,
+  "y": 54,
+  "display": "flex",
+  "visible": true
+ },
+ "guide": {
+  "w": 312,
+  "h": 494,
+  "x": 698,
+  "y": 66,
+  "display": "flex",
+  "visible": true
+ },
+ "goals": {
+  "w": 312,
+  "h": 180,
+  "x": 698,
+  "y": 578,
+  "display": "block",
+  "visible": true
+ },
+ "progressCard": {
+  "w": 309,
+  "h": 48,
+  "x": 8,
+  "y": 708,
+  "display": "block",
+  "visible": true
+ },
+ "drawerOpen": false,
+ "topbarOverflow": 0,
+ "bodyOverflowX": 0
+}

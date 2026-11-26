@@ -1,0 +1,62 @@
+﻿{
+ "themeBefore": {
+  "theme": null,
+  "themeColor": "#f4ebe0",
+  "paper": "#f4ebe0",
+  "ink": "#1d1b18",
+  "bg": "rgb(244, 235, 224)",
+  "stored": null,
+  "aria": "Switch to dark theme"
+ },
+ "themeAfter": {
+  "theme": "dark",
+  "themeColor": "#211e1a",
+  "paper": "#211e1a",
+  "ink": "#efe6d6",
+  "bg": "rgb(33, 30, 26)",
+  "stored": "\"dark\"",
+  "aria": "Switch to light theme"
+ },
+ "themeRestored": {
+  "theme": "light",
+  "themeColor": "#f4ebe0",
+  "paper": "#f4ebe0",
+  "ink": "#1d1b18",
+  "bg": "rgb(244, 235, 224)",
+  "stored": "\"light\"",
+  "aria": "Switch to dark theme"
+ },
+ "langMenuBefore": {
+  "expanded": "false",
+  "label": "Language: English",
+  "optionCount": 21
+ },
+ "langMenuOpen": {
+  "expanded": "true",
+  "visible": true,
+  "focused": "EnglishEnglish"
+ },
+ "spanish": {
+  "lang": "es",
+  "dir": "ltr",
+  "stored": "\"es\"",
+  "h1": "Balanceo de carga",
+  "nav": [
+   "Aprender",
+   "Pr├íctica",
+   "Laboratorio",
+   "Chuletas"
+  ],
+  "guideH2": "Round robin: por turnos",
+  "next": "Siguiente: Trabajo pesado",
+  "steps": [
+   "1 Punto caliente",
+   "2 A├▒adir un LB",
+   "3 Round robin",
+   "4 Trabajo pesado"
+  ],
+  "title": "Balanceo de carga ┬╖ System Design",
+  "url": "https://designed-to-scale.vercel.app/#/load-balancing/3",
+  "pending": null
+ }
+}

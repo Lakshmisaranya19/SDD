@@ -1,0 +1,52 @@
+﻿{
+ "right": {
+  "hash": "#/sharding/2",
+  "step": "2 Split by range"
+ },
+ "right2": {
+  "hash": "#/sharding/3",
+  "step": "3 Hot spot"
+ },
+ "left": {
+  "hash": "#/sharding/2",
+  "step": "2 Split by range"
+ },
+ "pauseBefore": {
+  "text": "Play",
+  "title": "Play traffic (Space)"
+ },
+ "pauseAfter": {
+  "text": "Pause",
+  "title": "Pause traffic (Space)",
+  "cls": "tool"
+ },
+ "pauseRestored": "Play",
+ "svg": {
+  "w": 12,
+  "h": 12,
+  "viewBox": "0 0 24 24",
+  "aria": null,
+  "role": null
+ },
+ "progressOpen": {
+  "cls": "card progress is-open",
+  "expanded": "true",
+  "rect": {
+   "w": 309,
+   "h": 324,
+   "y": 312
+  },
+  "details": [
+   "Foundations1/3",
+   "Scaling0/5",
+   "Data & Storage1/11",
+   "Communication0/4",
+   "Reliability0/4",
+   "Architecture0/4",
+   "Security0/3",
+   "Shipping0/2",
+   "Whole Systems0/4"
+  ],
+  "html": 3915
+ }
+}

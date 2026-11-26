@@ -1,0 +1,191 @@
+﻿{
+ "langRestored": {
+  "h1": "Load Balancing",
+  "stored": "\"en\""
+ },
+ "newResources": [],
+ "allResources": [
+  {
+   "name": "/assets/index-BeXJu_A0.js",
+   "initiator": "script",
+   "bytes": 240429,
+   "dur": 117
+  },
+  {
+   "name": "/assets/index-CxX-BAVx.css",
+   "initiator": "link",
+   "bytes": 21992,
+   "dur": 51
+  },
+  {
+   "name": "/site.webmanifest",
+   "initiator": "link",
+   "bytes": 846,
+   "dur": 129
+  },
+  {
+   "name": "/assets/jetbrains-mono-latin-800-normal-D2mQHRMK.woff2",
+   "initiator": "css",
+   "bytes": 21536,
+   "dur": 220
+  },
+  {
+   "name": "/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2",
+   "initiator": "css",
+   "bytes": 21468,
+   "dur": 223
+  },
+  {
+   "name": "/assets/jetbrains-mono-latin-700-normal-BYuf6tUa.woff2",
+   "initiator": "css",
+   "bytes": 22208,
+   "dur": 217
+  },
+  {
+   "name": "/assets/jetbrains-mono-latin-600-normal-C8RAYTDA.woff2",
+   "initiator": "css",
+   "bytes": 22160,
+   "dur": 223
+  },
+  {
+   "name": "/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2",
+   "initiator": "css",
+   "bytes": 22132,
+   "dur": 228
+  },
+  {
+   "name": "/favicon.svg",
+   "initiator": "other",
+   "bytes": 1067,
+   "dur": 45
+  },
+  {
+   "name": "/icon-192.png",
+   "initiator": "other",
+   "bytes": 4754,
+   "dur": 45
+  },
+  {
+   "name": "/assets/jetbrains-mono-greek-700-normal-C6CZE3T8.woff2",
+   "initiator": "css",
+   "bytes": 4600,
+   "dur": 386
+  },
+  {
+   "name": "/assets/jetbrains-mono-cyrillic-700-normal-BWTpRfYl.woff2",
+   "initiator": "css",
+   "bytes": 5636,
+   "dur": 375
+  },
+  {
+   "name": "/assets/ui-BRJ4JvhW.js",
+   "initiator": "script",
+   "bytes": 5816,
+   "dur": 42
+  },
+  {
+   "name": "/assets/load-balancing-DMOLXeZs.js",
+   "initiator": "script",
+   "bytes": 6242,
+   "dur": 46
+  },
+  {
+   "name": "/assets/stateless-d8gROosJ.js",
+   "initiator": "script",
+   "bytes": 5475,
+   "dur": 50
+  }
+ ],
+ "serviceWorker": [],
+ "manifest": {
+  "name": "System Design",
+  "short_name": "System Design",
+  "description": "An interactive system design course: each idea is an animated diagram you step through, from one server to whole systems.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4ebe0",
+  "theme_color": "#f4ebe0",
+  "icons": [
+   {
+    "src": "/icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any maskable"
+   },
+   {
+    "src": "/icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+   }
+  ]
+ },
+ "fonts": [
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "unloaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "unloaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "unloaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "unloaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "loaded"
+  },
+  {
+   "family": "JetBrains Mono",
+   "status": "unloaded"
+  }
+ ],
+ "caches": [],
+ "storageEstimate": {
+  "quota": 10737418240,
+  "usage": 0,
+  "usageDetails": {}
+ },
+ "localStorageAll": {
+  "sdt:theme": "\"light\"",
+  "sdt:done": "[\"request-lifecycle\"]",
+  "sdt:recent": "[{\"lessonId\":\"load-balancing\",\"step\":2},{\"lessonId\":\"latency-throughput\",\"step\":0},{\"lessonId\":\"request-lifecycle\",\"step\":9}]",
+  "sdt:last": "{\"lessonId\":\"load-balancing\",\"step\":2}",
+  "sdt:lang": "\"en\""
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "focusSeq": [
+  "INPUT.sx__input  ",
+  "INPUT.sx__input  ",
+  "INPUT.sx__input  ",
+  "INPUT.sx__input  ",
+  "INPUT.sx__input  ",
+  "INPUT.sx__input  "
+ ],
+ "trap": {
+  "inside": true,
+  "active": "INPUT",
+  "cls": "sx__input"
+ },
+ "ja": {
+  "lang": "ja",
+  "stored": "\"ja\"",
+  "h1": "キャッシュ",
+  "title": "キャッシュ · System Design",
+  "nav": [
+   "学ぶ",
+   "練習",
+   "デザインラボ",
+   "チートシート"
+  ]
+ },
+ "restored": {
+  "lang": "ja",
+  "dir": "ltr",
+  "stored": "\"ja\"",
+  "h1": "キャッシュ",
+  "hash": "#/caching/5"
+ }
+}

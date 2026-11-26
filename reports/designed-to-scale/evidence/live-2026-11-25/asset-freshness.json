@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-25T18:41:07+05:30",
+  "targetUrl": "https://designed-to-scale.vercel.app/",
+  "targetHash": "16D98C1A242AF4D867016458EDA593BF",
+  "liveEvidenceId": "ev_f97295eba760baf05f306ea69c3c11fe26fb850fca77063df3fa2cbbd97b465b",
+  "html": {
+    "savedBytes": 6347,
+    "savedSha256": "46E5E532904D025DB7E4C9069CC10BED98A163C57440D5DB40A329A9EAE4CDAC",
+    "assessment": "confirmed"
+  },
+  "mainJavaScript": {
+    "path": "/assets/index-BeXJu_A0.js",
+    "liveBytes": 790585,
+    "liveSha256": "475546D36E0549AECBC4D5E4557F7D5FECFD0B14F207EF7E0B5412C464B06FA0",
+    "savedBytes": 790585,
+    "savedSha256": "475546D36E0549AECBC4D5E4557F7D5FECFD0B14F207EF7E0B5412C464B06FA0",
+    "assessment": "confirmed-identical"
+  },
+  "mainCss": {
+    "path": "/assets/index-CxX-BAVx.css",
+    "liveBytes": 64269,
+    "liveSha256": "DC99C195D0230AE0D23C005906C6E307FBD8184AD59408735878B58B7430EEE1",
+    "savedBytes": 64269,
+    "savedSha256": "DC99C195D0230AE0D23C005906C6E307FBD8184AD59408735878B58B7430EEE1",
+    "assessment": "confirmed-identical"
+  },
+  "scope": "Main entry HTML and matching main JavaScript/CSS asset names. Dynamic chunks are not covered by this checksum."
+}

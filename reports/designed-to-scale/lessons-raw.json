@@ -1,0 +1,362 @@
+[
+ {
+  "id": "request-lifecycle",
+  "title": "How a Request Travels",
+  "mod": "01. Foundations",
+  "min": "10",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Hit Enter → Find address → Connect → Request → Fetch data → Response → More files → Slow query → Far away → Recap"
+ },
+ {
+  "id": "latency-throughput",
+  "title": "Latency & Throughput",
+  "mod": "01. Foundations",
+  "min": "11",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Two numbers → Busier → Hockey stick → Averages lie → Add capacity → Distance → In flight → Fan-out → Batching → Recap"
+ },
+ {
+  "id": "napkin-math",
+  "title": "Napkin Math",
+  "mod": "01. Foundations",
+  "min": "10",
+  "lvl": "Beginner",
+  "steps": 9,
+  "stepNames": "The question → Requests / s → Peak → Servers → Storage → Bandwidth → Cache size → Numbers → Recap"
+ },
+ {
+  "id": "vertical-horizontal",
+  "title": "Vertical vs Horizontal Scaling",
+  "mod": "02. Scaling",
+  "min": "11",
+  "lvl": "Beginner",
+  "steps": 11,
+  "stepNames": "One server → Viral spike → Scale up → The ceiling → One failure → Scale out → Night time → Autoscale → Flash sale → Who routes? → Recap"
+ },
+ {
+  "id": "load-balancing",
+  "title": "Load Balancing",
+  "mod": "02. Scaling",
+  "min": "12",
+  "lvl": "Beginner",
+  "steps": 12,
+  "stepNames": "Hot spot → Add an LB → Round robin → Heavy work → Least conns → Health checks → LB fails → Standby → Failover → By path → Deploy → Recap"
+ },
+ {
+  "id": "stateless",
+  "title": "Stateless Services",
+  "mod": "02. Scaling",
+  "min": "10",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Logged in → Logged out → Sticky → A dies → Shared store → Lose one → Tokens → Uploads → Object store → Recap"
+ },
+ {
+  "id": "caching",
+  "title": "Caching",
+  "mod": "02. Scaling",
+  "min": "14",
+  "lvl": "Beginner",
+  "steps": 13,
+  "stepNames": "DB melts → Same reads → Add cache → Hit rate → Stale → Invalidate → Eviction → Stampede → One fetch → Missing keys → Bloom filter → Layers → Recap"
+ },
+ {
+  "id": "cdn",
+  "title": "Content Delivery",
+  "mod": "02. Scaling",
+  "min": "10",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Far away → Same bytes → Edges → Cold edge → Old files → Versioning → Spike → Private → Shield → Recap"
+ },
+ {
+  "id": "sql-nosql",
+  "title": "SQL vs NoSQL",
+  "mod": "03. Data & Storage",
+  "min": "11",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Tables → Transactions → Growing pains → Documents → KeyΓÇôvalue → Trade-offs → Use both → Search → Specialists → Recap"
+ },
+ {
+  "id": "indexes",
+  "title": "Indexes",
+  "mod": "03. Data & Storage",
+  "min": "12",
+  "lvl": "Beginner",
+  "steps": 11,
+  "stepNames": "Slow query → Phone book → Add index → Why shallow → Writes pay → Column order → Wildcards → Selectivity → EXPLAIN → Covering → Recap"
+ },
+ {
+  "id": "storage-engines",
+  "title": "Storage Engines",
+  "mod": "03. Data & Storage",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 13,
+  "stepNames": "Two places → Crash → Log first → How sure? → Checkpoint → B-tree → Firehose → LSM-tree → Find a key → Compaction → Choosing → Columns → Recap"
+ },
+ {
+  "id": "replication",
+  "title": "Replication",
+  "mod": "03. Data & Storage",
+  "min": "12",
+  "lvl": "Beginner",
+  "steps": 11,
+  "stepNames": "One DB → Copies → Read replicas → Lag → Read your writes → Leader dies → Failover → Reports → Not a backup → Styles → Recap"
+ },
+ {
+  "id": "sharding",
+  "title": "Sharding",
+  "mod": "03. Data & Storage",
+  "min": "11",
+  "lvl": "Intermediate",
+  "steps": 9,
+  "stepNames": "Too big → Split by range → Hot spot → Hash it → Celebrity → Split key → Cross-shard → Add a shard → Recap"
+ },
+ {
+  "id": "consistent-hashing",
+  "title": "Consistent Hashing",
+  "mod": "03. Data & Storage",
+  "min": "10",
+  "lvl": "Intermediate",
+  "steps": 10,
+  "stepNames": "The problem → The ring → Keys → Add a server → Remove one → Uneven → Virtual nodes → Replicas → Cache fleet → Recap"
+ },
+ {
+  "id": "unique-ids",
+  "title": "Unique IDs at Scale",
+  "mod": "03. Data & Storage",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "One counter → Shards collide → Ticket server → Blocks → UUIDs → Random hurts → Time first → Snowflake → Clock → Leaks → Choosing → Recap"
+ },
+ {
+  "id": "cap",
+  "title": "CAP & Consistency",
+  "mod": "03. Data & Storage",
+  "min": "12",
+  "lvl": "Intermediate",
+  "steps": 11,
+  "stepNames": "Two regions → Partition → Choose C → Choose A → Heal → Clocks → CAP → Quorums → Per operation → Models → Recap"
+ },
+ {
+  "id": "consensus",
+  "title": "Consensus & Leader Election",
+  "mod": "03. Data & Storage",
+  "min": "14",
+  "lvl": "Advanced",
+  "steps": 12,
+  "stepNames": "One leader → Split brain → Majority → Election → Commit → Heal → How many → Zombie → Fencing → The price → In practice → Recap"
+ },
+ {
+  "id": "transactions",
+  "title": "Transactions & Isolation",
+  "mod": "03. Data & Storage",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 13,
+  "stepNames": "Last seat → Race → Not enough → Lock → Atomic → Versions → Levels → Phantom → Deadlock → Constraint → Slow lock → Hold → Recap"
+ },
+ {
+  "id": "files",
+  "title": "Files & Media",
+  "mod": "03. Data & Storage",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 13,
+  "stepNames": "BLOBs → It chokes → Object storage → Through servers → Presigned → In parts → Processing → CDN → Video → In step → Lifecycle → Public bucket → Recap"
+ },
+ {
+  "id": "apis",
+  "title": "REST, RPC & GraphQL",
+  "mod": "04. Communication",
+  "min": "11",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Contract → REST → On 4G → GraphQL → The catch → RPC → Pagination → Versions → Choosing → Recap"
+ },
+ {
+  "id": "queues",
+  "title": "Message Queues",
+  "mod": "04. Communication",
+  "min": "12",
+  "lvl": "Beginner",
+  "steps": 11,
+  "stepNames": "Slow upload → Add a queue → Spike → More workers → Crash → Acks → Poison → Order → Partitions → Backpressure → Recap"
+ },
+ {
+  "id": "pubsub",
+  "title": "Pub/Sub & Events",
+  "mod": "04. Communication",
+  "min": "10",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "Call everyone → Email down → Publish → Queue vs topic → New subscriber → Catch up → Trade-offs → Outbox → Replay → Recap"
+ },
+ {
+  "id": "realtime",
+  "title": "Real-time Updates",
+  "mod": "04. Communication",
+  "min": "11",
+  "lvl": "Beginner",
+  "steps": 10,
+  "stepNames": "No way in → Polling → At scale → Long polling → SSE → WebSockets → Many servers → Offline → Presence → Recap"
+ },
+ {
+  "id": "redundancy",
+  "title": "Redundancy & Failover",
+  "mod": "05. Reliability",
+  "min": "12",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "Nines → SPOFs → Two of each → One building → Zones → Zone fails → RTO & RPO → Chaos → Bad deploy → Canary → Regions → Recap"
+ },
+ {
+  "id": "rate-limiting",
+  "title": "Rate Limiting",
+  "mod": "05. Reliability",
+  "min": "10",
+  "lvl": "Intermediate",
+  "steps": 9,
+  "stepNames": "Runaway → Limit → Token bucket → Algorithms → Many gateways → Back off → Tenants → Shedding → Recap"
+ },
+ {
+  "id": "timeouts-retries",
+  "title": "Timeouts & Retries",
+  "mod": "05. Reliability",
+  "min": "11",
+  "lvl": "Intermediate",
+  "steps": 11,
+  "stepNames": "Slow call → Timeout → Retry → Retry storm → Backoff → Breaker → Closed → Idempotency → Deadlines → Bulkheads → Recap"
+ },
+ {
+  "id": "observability",
+  "title": "Observability",
+  "mod": "05. Reliability",
+  "min": "11",
+  "lvl": "Intermediate",
+  "steps": 9,
+  "stepNames": "ItΓÇÖs slow → Metrics → Alerts → Logs → Traces → Fixed → Incident → Post-mortem → Recap"
+ },
+ {
+  "id": "microservices",
+  "title": "Monolith vs Microservices",
+  "mod": "06. Architecture",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "Monolith → Growing pains → Split → Own data → Network → Distributed monolith → Joins? → Local copy → Contracts → Choosing → Strangler → Recap"
+ },
+ {
+  "id": "service-discovery",
+  "title": "Service Discovery & Gateways",
+  "mod": "06. Architecture",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 13,
+  "stepNames": "Config → Churn → Registry → Churn again → Who balances → DNS → Too early → Ready → Registry down → Plumbing → Mesh → Gateway → Recap"
+ },
+ {
+  "id": "sagas",
+  "title": "Sagas & Distributed Transactions",
+  "mod": "06. Architecture",
+  "min": "13",
+  "lvl": "Advanced",
+  "steps": 11,
+  "stepNames": "Half a trip → 2PC → Blocked → Saga → Orchestration → Choreography → In between → Resume → Undo fails → Unknown → Recap"
+ },
+ {
+  "id": "batch-stream",
+  "title": "Batch & Stream Processing",
+  "mod": "06. Architecture",
+  "min": "15",
+  "lvl": "Intermediate",
+  "steps": 14,
+  "stepNames": "Live DB → Batch → Map/reduce → Skew → Combine → Too late → Stream → Windows → Late events → Lag → Partitions → Unique → Both → Recap"
+ },
+ {
+  "id": "authentication",
+  "title": "Authentication",
+  "mod": "07. Security",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "Plain text → Hashing → Session → Reset → Stuffing → Slow down → 2nd factor → Phishing → Passkeys → Use a provider → Tokens → Recap"
+ },
+ {
+  "id": "authorization",
+  "title": "Authorization",
+  "mod": "07. Security",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 13,
+  "stepNames": "Change the URL → Ownership → Mass assign → Row-level → Roles → Sharing → Policy → Master key → Least privilege → Deputy → On behalf → Audit → Recap"
+ },
+ {
+  "id": "encryption",
+  "title": "Encryption & Secrets",
+  "mod": "07. Security",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "Caf├⌐ Wi-Fi → TLS → Expired → Inside too → Stolen backup → At rest → Rotation → Leaked key → Vault → Tokenize → End-to-end → Recap"
+ },
+ {
+  "id": "testing",
+  "title": "Testing",
+  "mod": "08. Shipping",
+  "min": "12",
+  "lvl": "Beginner",
+  "steps": 11,
+  "stepNames": "Is it safe? → By hand → Unit tests → Test doubles → Integration → Contracts → End-to-end → Pyramid → Flaky → Load & failure → Recap"
+ },
+ {
+  "id": "cicd",
+  "title": "CI/CD & Deployments",
+  "mod": "08. Shipping",
+  "min": "13",
+  "lvl": "Intermediate",
+  "steps": 11,
+  "stepNames": "By hand → Friday → CI → One artifact → CD → Blue-green → Canary → Migrations → Flags → Measure → Recap"
+ },
+ {
+  "id": "hld-lld",
+  "title": "HLD & LLD",
+  "mod": "09. Whole Systems",
+  "min": "8",
+  "lvl": "Beginner",
+  "steps": 8,
+  "stepNames": "Two levels → The map → Trade-offs → Zoom in → LLD decisions → Contracts → Top-down → Recap"
+ },
+ {
+  "id": "design-url-shortener",
+  "title": "Design a URL Shortener",
+  "mod": "09. Whole Systems",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "The brief → Numbers → First draft → Hash it? → Count it → Guessable → Cache → 301 or 302 → Storage → Clicks → Abuse → Recap"
+ },
+ {
+  "id": "design-news-feed",
+  "title": "Design a News Feed",
+  "mod": "09. Whole Systems",
+  "min": "14",
+  "lvl": "Intermediate",
+  "steps": 12,
+  "stepNames": "The brief → Numbers → Pull → Wrong side → Push → Ids only → Celebrity → Hybrid → Idle users → Scrolling → Cache lost → Recap"
+ },
+ {
+  "id": "design-chat",
+  "title": "Design a Chat System",
+  "mod": "09. Whole Systems",
+  "min": "14",
+  "lvl": "Advanced",
+  "steps": 12,
+  "stepNames": "The brief → Numbers → One server → Where is Bob? → Registry → Store first → Offline → Duplicates → Groups → Presence → Gateway dies → Recap"
+ }
+]

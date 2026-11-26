@@ -1,0 +1,292 @@
+{
+  "phase": "REA Phase 2 - Native Keyboard and Focus Behaviour",
+  "checkedAt": "2026-11-25",
+  "browserPageId": "cfddc300-25b5-4f58-a805-9b9ce47870fd",
+  "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+  "finalUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+  "viewportAtMobileTest": {
+    "width": 390,
+    "height": 844
+  },
+  "nativeInputMethod": "Shared browser page native key input through typeInPage",
+  "screenshots": [
+    "No REA screenshot was retained during this phase. The REA screenshot call exceeded its 10000 ms command deadline.",
+    "Browser accessibility snapshots and active-element refs are the retained DOM evidence."
+  ],
+  "reaSession": {
+    "cdpEndpoint": "http://127.0.0.1:9222",
+    "targetId": "16D98C1A242AF4D867016458EDA593BF",
+    "sessionReuse": "Target remained at the target origin; the shared browser page was the active page"
+  },
+  "tests": [
+    {
+      "id": "P2-01",
+      "area": "Ctrl+K search shortcut",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Request/Lifecycle page context",
+      "input": "Control+k",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Search combobox",
+      "urlChange": false,
+      "visibleState": "Search dialog opened",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-02",
+      "area": "Search arrow selection",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Search combobox",
+      "input": "ArrowDown",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Search combobox; Latency & Throughput became selected result",
+      "urlChange": false,
+      "visibleState": "Selected result changed from How a Request Travels to Latency & Throughput",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-03",
+      "area": "Search result native Enter selection",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Selected Latency & Throughput search result",
+      "input": "Enter",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Search combobox remained present",
+      "urlChange": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "visibleState": "Search route selection opened Latency & Throughput",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-04",
+      "area": "Search Escape close",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Search combobox",
+      "input": "Escape",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Search dialog closed; focus state not captured by a separate DOM snapshot",
+      "urlChange": false,
+      "visibleState": "Search dialog closed",
+      "status": "CONFIRMED",
+      "limitation": "Exact restoration target was not captured; search close itself is confirmed."
+    },
+    {
+      "id": "P2-05",
+      "area": "Tab header sequence",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "After native sequence reset at page context",
+      "input": "Tab, Tab, Tab",
+      "native": true,
+      "actionOccurred": false,
+      "resultingFocus": "Menu, brand, search, language, theme in repeated native sequences",
+      "urlChange": false,
+      "visibleState": "Native active-element movement in header",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-06",
+      "area": "Enter activates mobile menu button",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Open the course menu",
+      "input": "Enter",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Menu button remained active",
+      "urlChange": false,
+      "visibleState": "Course drawer opened",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-07",
+      "area": "Escape closes mobile drawer",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Open the course menu while drawer open",
+      "input": "Escape",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Open the course menu",
+      "urlChange": false,
+      "visibleState": "Course drawer closed",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-08",
+      "area": "Enter opens search button",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Search the course",
+      "input": "Enter",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Search combobox",
+      "urlChange": false,
+      "visibleState": "Search dialog opened",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-09",
+      "area": "Space activates theme button",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Switch to dark theme",
+      "input": "Space",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Theme button remained active",
+      "urlChange": false,
+      "visibleState": "Theme/state snapshot changed through stage pause control in the recorded sequence",
+      "status": "PARTIALLY VERIFIED",
+      "limitation": "The accessibility snapshot did not isolate the theme state from the stage pause control; this test should not be cited as confirmed theme activation."
+    },
+    {
+      "id": "P2-10",
+      "area": "Enter activates Replay",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Replay this step",
+      "input": "Enter",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Replay remained in stage context",
+      "urlChange": false,
+      "visibleState": "Diagram state changed in snapshot",
+      "status": "PARTIALLY VERIFIED",
+      "limitation": "No dedicated replay completion screenshot was captured."
+    },
+    {
+      "id": "P2-11",
+      "area": "Space activates Pause/Play",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Pause traffic or Play traffic",
+      "input": "Space",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Pause/Play control",
+      "urlChange": false,
+      "visibleState": "Control label toggled Pause -> Play -> Pause in native sequences",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-12",
+      "area": "Tab and Shift+Tab timeline",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Full screen control",
+      "input": "Tab then Shift+Tab",
+      "native": true,
+      "actionOccurred": false,
+      "resultingFocus": "Full screen -> timeline step 1 -> full screen",
+      "urlChange": false,
+      "visibleState": "Active element moved without action",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-13",
+      "area": "Enter activates timeline step",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/1",
+      "initialFocus": "Timeline step 2",
+      "input": "Enter",
+      "native": true,
+      "actionOccurred": true,
+      "resultingFocus": "Timeline step 2",
+      "urlChange": "https://designed-to-scale.vercel.app/#/latency-throughput/2",
+      "visibleState": "Step 2 content and metrics changed",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-14",
+      "area": "Mobile timeline Tab and Shift+Tab",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/latency-throughput/2",
+      "initialFocus": "Timeline step 2",
+      "input": "Tab then Shift+Tab",
+      "native": true,
+      "actionOccurred": false,
+      "resultingFocus": "Step 3 then step 2",
+      "urlChange": false,
+      "visibleState": "Active-element movement in mobile layout",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "P2-15",
+      "area": "Search Tab movement",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Search combobox",
+      "input": "Tab",
+      "native": true,
+      "actionOccurred": false,
+      "resultingFocus": "Results region/list selection state",
+      "urlChange": false,
+      "visibleState": "Search remained open",
+      "status": "PARTIALLY VERIFIED",
+      "limitation": "The snapshot did not show a separate browser focus indicator or exact active DOM element for every Tab boundary."
+    },
+    {
+      "id": "P2-16",
+      "area": "Search focus trapping",
+      "initialUrl": "https://designed-to-scale.vercel.app/#/request-lifecycle/1",
+      "initialFocus": "Search combobox",
+      "input": "Tab and Shift+Tab within search",
+      "native": true,
+      "actionOccurred": false,
+      "resultingFocus": "Search combobox/result selection, no outside-element focus observed in tested sequence",
+      "urlChange": false,
+      "visibleState": "Dialog remained open",
+      "status": "PARTIALLY VERIFIED",
+      "limitation": "Only one Tab/Shift+Tab sequence was captured. A complete wraparound cycle is not yet proven."
+    },
+    {
+      "id": "P2-17",
+      "area": "Visible focus indicators",
+      "status": "UNVERIFIED",
+      "native": true,
+      "limitation": "Snapshots expose the active element name but do not establish a measured CSS/visual focus outline."
+    },
+    {
+      "id": "P2-18",
+      "area": "Drawer Tab loop and close focus restoration",
+      "status": "PARTIALLY VERIFIED",
+      "native": true,
+      "limitation": "Opening by native Enter and closing by native Escape were confirmed; close focus was observed as the menu button in a close snapshot. A complete drawer Tab loop was not captured."
+    },
+    {
+      "id": "P2-19",
+      "area": "Lesson pager native Next activation",
+      "status": "UNVERIFIED",
+      "native": true,
+      "limitation": "Not completed in this phase; no native Enter/Space activation was recorded for the Next button."
+    },
+    {
+      "id": "P2-20",
+      "area": "Shift+Tab at document and dialog boundaries",
+      "status": "PARTIALLY VERIFIED",
+      "native": true,
+      "limitation": "Reverse timeline movement was confirmed; complete document-boundary wraparound was not."
+    }
+  ],
+  "confirmed": [
+    "Ctrl+K opens search and focuses the search combobox.",
+    "ArrowDown changes the selected search result.",
+    "Enter opens the selected search lesson and changes the hash.",
+    "Escape closes search.",
+    "Tab moves through the header menu, brand, search, language, theme and external link.",
+    "Enter activates the course-menu button.",
+    "Escape closes the course drawer and restores focus to the menu button.",
+    "Enter activates the search button and focuses the search combobox.",
+    "Native Space toggles Pause/Play.",
+    "Tab and Shift+Tab move between timeline controls.",
+    "Enter activates a timeline step and changes the URL."
+  ],
+  "partial": [
+    "Theme activation via Space was mixed with stage-pause evidence.",
+    "Replay Enter showed diagram changes but lacks a dedicated completion record.",
+    "Search Tab and focus-trap wraparound remains incomplete.",
+    "Drawer Tab loop remains incomplete.",
+    "Visible focus outlines were not measured.",
+    "Pager native Next activation was not tested."
+  ],
+  "unverified": [
+    "Visible focus indicator CSS/contrast.",
+    "Native Next button activation.",
+    "Complete focus trapping across the entire search dialog.",
+    "Complete drawer Tab loop.",
+    "Screen-reader live-region announcements."
+  ]
+}

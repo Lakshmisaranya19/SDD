@@ -1,0 +1,330 @@
+﻿{
+ "#/caching/5": {
+  "callouts": [
+   {
+    "kind": "callout callout--warn",
+    "text": "Watch outΓÇ£There are only two hard things in computer science: cache invalidation and naming things.ΓÇ¥ ΓÇö Phil Karlton"
+   }
+  ],
+  "terms": [],
+  "tables": 0,
+  "takeaways": "",
+  "classes": [
+   [
+    "[object",
+    20
+   ],
+   [
+    "SVGAnimatedString]",
+    20
+   ],
+   [
+    "eyebrow",
+    2
+   ],
+   [
+    "chg",
+    2
+   ],
+   [
+    "guide__meta",
+    1
+   ],
+   [
+    "guide__meta-end",
+    1
+   ],
+   [
+    "chapter",
+    1
+   ],
+   [
+    "chapter--red",
+    1
+   ],
+   [
+    "guide__content",
+    1
+   ],
+   [
+    "is-in",
+    1
+   ],
+   [
+    "guide__title",
+    1
+   ],
+   [
+    "guide__body",
+    1
+   ],
+   [
+    "callout",
+    1
+   ],
+   [
+    "callout--warn",
+    1
+   ],
+   [
+    "callout__icon",
+    1
+   ],
+   [
+    "callout__title",
+    1
+   ],
+   [
+    "changes",
+    1
+   ],
+   [
+    "chg--mod",
+    1
+   ],
+   [
+    "chg--del",
+    1
+   ],
+   [
+    "guide__nav",
+    1
+   ],
+   [
+    "btn-ghost",
+    1
+   ],
+   [
+    "btn-pop",
+    1
+   ],
+   [
+    "btn-next",
+    1
+   ],
+   [
+    "btn-next__label",
+    1
+   ],
+   [
+    "guide__hint",
+    1
+   ]
+  ],
+  "heading": "The price changed. The cache didnΓÇÖt.",
+  "chapter": "Problem",
+  "bodySample": "The price changed. The cache didnΓÇÖt. An admin updates a price from $20 to $25. The database has the new price ΓÇö but the cache still holds the old copy, and thatΓÇÖs what users see.A cache is a second copy of the truth. Keeping copies in sync is the hard part of caching. Watch outΓÇ£There are only two hard things in computer science: cache invalidation and naming things.ΓÇ¥ ΓÇö Phil Karlton What changed~Da"
+ },
+ "#/caching/13": {
+  "callouts": [
+   {
+    "kind": "callout callout--next",
+    "text": "Coming upNext up: Content Delivery ΓÇö caching files on servers spread around the world, close to your users."
+   }
+  ],
+  "terms": [],
+  "tables": 0,
+  "takeaways": "Cache answers that are read often and change rarely. Cache-aside: check the cache, fall back to the database, then fill the cache. Hit rate drives both speed and database load. Plan for staleness: invalidate on write, add a TTL, evict with LRU. Protect hot keys from stampedes: one fetch, early refre",
+  "classes": [
+   [
+    "[object",
+    19
+   ],
+   [
+    "SVGAnimatedString]",
+    19
+   ],
+   [
+    "is-in",
+    2
+   ],
+   [
+    "guide__meta",
+    1
+   ],
+   [
+    "eyebrow",
+    1
+   ],
+   [
+    "guide__meta-end",
+    1
+   ],
+   [
+    "chapter",
+    1
+   ],
+   [
+    "chapter--ink",
+    1
+   ],
+   [
+    "guide__content",
+    1
+   ],
+   [
+    "guide__title",
+    1
+   ],
+   [
+    "guide__body",
+    1
+   ],
+   [
+    "takeaways",
+    1
+   ],
+   [
+    "callout",
+    1
+   ],
+   [
+    "callout--next",
+    1
+   ],
+   [
+    "callout__icon",
+    1
+   ],
+   [
+    "callout__title",
+    1
+   ],
+   [
+    "guide__nav",
+    1
+   ],
+   [
+    "btn-ghost",
+    1
+   ],
+   [
+    "btn-pop",
+    1
+   ],
+   [
+    "btn-next",
+    1
+   ],
+   [
+    "btn-next__label",
+    1
+   ],
+   [
+    "guide__hint",
+    1
+   ]
+  ],
+  "heading": "Recap",
+  "chapter": "Recap",
+  "bodySample": "Recap Cache answers that are read often and change rarely. Cache-aside: check the cache, fall back to the database, then fill the cache. Hit rate drives both speed and database load. Plan for staleness: invalidate on write, add a TTL, evict with LRU. Protect hot keys from stampedes: one fetch, early refresh, jittered TTLs. Cache ΓÇ£not foundΓÇ¥ too, and screen impossible keys with a Bloom filter. Comi"
+ },
+ "#/request-lifecycle/10": {
+  "callouts": [
+   {
+    "kind": "callout callout--next",
+    "text": "Coming upNext up: Latency & Throughput ΓÇö what happens to that 155 ms when thousands of users arrive at once."
+   }
+  ],
+  "terms": [],
+  "tables": 0,
+  "takeaways": "DNS turns names into addresses; answers are cached. Connections cost round trips ΓÇö reuse them. Server code is often the smallest slice of latency ΓÇö unless a slow query sneaks in. Distance multiplies every round trip.",
+  "classes": [
+   [
+    "[object",
+    37
+   ],
+   [
+    "SVGAnimatedString]",
+    37
+   ],
+   [
+    "guide__meta",
+    1
+   ],
+   [
+    "eyebrow",
+    1
+   ],
+   [
+    "guide__meta-end",
+    1
+   ],
+   [
+    "chapter",
+    1
+   ],
+   [
+    "chapter--ink",
+    1
+   ],
+   [
+    "guide__content",
+    1
+   ],
+   [
+    "is-in",
+    1
+   ],
+   [
+    "guide__title",
+    1
+   ],
+   [
+    "guide__body",
+    1
+   ],
+   [
+    "takeaways",
+    1
+   ],
+   [
+    "guide__card",
+    1
+   ],
+   [
+    "callout",
+    1
+   ],
+   [
+    "callout--next",
+    1
+   ],
+   [
+    "callout__icon",
+    1
+   ],
+   [
+    "callout__title",
+    1
+   ],
+   [
+    "guide__nav",
+    1
+   ],
+   [
+    "btn-ghost",
+    1
+   ],
+   [
+    "btn-pop",
+    1
+   ],
+   [
+    "btn-next",
+    1
+   ],
+   [
+    "btn-next__label",
+    1
+   ],
+   [
+    "guide__hint",
+    1
+   ]
+  ],
+  "heading": "Where the time went",
+  "chapter": "Recap",
+  "bodySample": "Where the time went Of 155 ms, only about 25 ms was the server and database actually working. The other ~130 ms was messages crossing the network. DNS turns names into addresses; answers are cached. Connections cost round trips ΓÇö reuse them. Server code is often the smallest slice of latency ΓÇö unless a slow query sneaks in. Distance multiplies every round trip. WHERE THE TIME WENT DNS lookup 20 ms"
+ }
+}

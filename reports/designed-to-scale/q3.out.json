@@ -1,0 +1,418 @@
+﻿{
+ "practice": {
+  "hash": "",
+  "path": "/",
+  "title": "How a Request Travels ┬╖ System Design",
+  "navActive": [
+   "Learn"
+  ],
+  "h1": [
+   "How a Request Travels"
+  ],
+  "h2": [
+   "Users say the shop feels slow"
+  ],
+  "sheetChildren": [
+   {
+    "tag": "DIV",
+    "cls": "lesson-head is-fresh",
+    "id": "head"
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card stage",
+    "id": ""
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card timeline is-fresh is-tight",
+    "id": "timeline"
+   }
+  ],
+  "mainText": "01. Foundations / Lesson 1 of 3 How a Request Travels 10 min Beginner 10 steps Follow one page load hop by hop ΓÇö and find out where the time really goes. DNS lookup ΓÇö Connect ΓÇö Request + server ΓÇö Download ΓÇö Total ΓÇö Fit Replay Pause you https://shop.example requestresponsehandshake In this lesson Step 1 of 10 1 Hit Enter 2 Find address 3 Connect 4 Request 5 Fetch data 6 Response 7 More files 8 Slow query 9 Far away 10 Recap",
+  "buttons": [
+   {
+    "text": "Fit",
+    "aria": null,
+    "cls": "tool tool--fit"
+   },
+   {
+    "text": "Replay",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "Pause",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "",
+    "aria": "Show the diagram full screen",
+    "cls": "tool tool--expand"
+   },
+   {
+    "text": "1 Hit Enter",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "2 Find address",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "3 Connect",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "4 Request",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "5 Fetch data",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "6 Response",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "7 More files",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "8 Slow query",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "9 Far away",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "10 Recap",
+    "aria": null,
+    "cls": ""
+   }
+  ]
+ },
+ "designLab": {
+  "hash": "",
+  "path": "/",
+  "title": "How a Request Travels ┬╖ System Design",
+  "navActive": [
+   "Learn"
+  ],
+  "h1": [
+   "How a Request Travels"
+  ],
+  "h2": [
+   "Users say the shop feels slow"
+  ],
+  "sheetChildren": [
+   {
+    "tag": "DIV",
+    "cls": "lesson-head is-fresh",
+    "id": "head"
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card stage",
+    "id": ""
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card timeline is-fresh is-tight",
+    "id": "timeline"
+   }
+  ],
+  "mainText": "01. Foundations / Lesson 1 of 3 How a Request Travels 10 min Beginner 10 steps Follow one page load hop by hop ΓÇö and find out where the time really goes. DNS lookup ΓÇö Connect ΓÇö Request + server ΓÇö Download ΓÇö Total ΓÇö Fit Replay Pause you https://shop.example requestresponsehandshake In this lesson Step 1 of 10 1 Hit Enter 2 Find address 3 Connect 4 Request 5 Fetch data 6 Response 7 More files 8 Slow query 9 Far away 10 Recap",
+  "buttons": [
+   {
+    "text": "Fit",
+    "aria": null,
+    "cls": "tool tool--fit"
+   },
+   {
+    "text": "Replay",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "Pause",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "",
+    "aria": "Show the diagram full screen",
+    "cls": "tool tool--expand"
+   },
+   {
+    "text": "1 Hit Enter",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "2 Find address",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "3 Connect",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "4 Request",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "5 Fetch data",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "6 Response",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "7 More files",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "8 Slow query",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "9 Far away",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "10 Recap",
+    "aria": null,
+    "cls": ""
+   }
+  ]
+ },
+ "cheatsheets": {
+  "hash": "",
+  "path": "/",
+  "title": "How a Request Travels ┬╖ System Design",
+  "navActive": [
+   "Learn"
+  ],
+  "h1": [
+   "How a Request Travels"
+  ],
+  "h2": [
+   "Users say the shop feels slow"
+  ],
+  "sheetChildren": [
+   {
+    "tag": "DIV",
+    "cls": "lesson-head is-fresh",
+    "id": "head"
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card stage",
+    "id": ""
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card timeline is-fresh is-tight",
+    "id": "timeline"
+   }
+  ],
+  "mainText": "01. Foundations / Lesson 1 of 3 How a Request Travels 10 min Beginner 10 steps Follow one page load hop by hop ΓÇö and find out where the time really goes. DNS lookup ΓÇö Connect ΓÇö Request + server ΓÇö Download ΓÇö Total ΓÇö Fit Replay Pause you https://shop.example requestresponsehandshake In this lesson Step 1 of 10 1 Hit Enter 2 Find address 3 Connect 4 Request 5 Fetch data 6 Response 7 More files 8 Slow query 9 Far away 10 Recap",
+  "buttons": [
+   {
+    "text": "Fit",
+    "aria": null,
+    "cls": "tool tool--fit"
+   },
+   {
+    "text": "Replay",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "Pause",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "",
+    "aria": "Show the diagram full screen",
+    "cls": "tool tool--expand"
+   },
+   {
+    "text": "1 Hit Enter",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "2 Find address",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "3 Connect",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "4 Request",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "5 Fetch data",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "6 Response",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "7 More files",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "8 Slow query",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "9 Far away",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "10 Recap",
+    "aria": null,
+    "cls": ""
+   }
+  ]
+ },
+ "learn": {
+  "hash": "",
+  "path": "/",
+  "title": "How a Request Travels ┬╖ System Design",
+  "navActive": [
+   "Learn"
+  ],
+  "h1": [
+   "How a Request Travels"
+  ],
+  "h2": [
+   "Users say the shop feels slow"
+  ],
+  "sheetChildren": [
+   {
+    "tag": "DIV",
+    "cls": "lesson-head is-fresh",
+    "id": "head"
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card stage",
+    "id": ""
+   },
+   {
+    "tag": "SECTION",
+    "cls": "card timeline is-fresh is-tight",
+    "id": "timeline"
+   }
+  ],
+  "mainText": "01. Foundations / Lesson 1 of 3 How a Request Travels 10 min Beginner 10 steps Follow one page load hop by hop ΓÇö and find out where the time really goes. DNS lookup ΓÇö Connect ΓÇö Request + server ΓÇö Download ΓÇö Total ΓÇö Fit Replay Pause you https://shop.example requestresponsehandshake In this lesson Step 1 of 10 1 Hit Enter 2 Find address 3 Connect 4 Request 5 Fetch data 6 Response 7 More files 8 Slow query 9 Far away 10 Recap",
+  "buttons": [
+   {
+    "text": "Fit",
+    "aria": null,
+    "cls": "tool tool--fit"
+   },
+   {
+    "text": "Replay",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "Pause",
+    "aria": null,
+    "cls": "tool"
+   },
+   {
+    "text": "",
+    "aria": "Show the diagram full screen",
+    "cls": "tool tool--expand"
+   },
+   {
+    "text": "1 Hit Enter",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "2 Find address",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "3 Connect",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "4 Request",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "5 Fetch data",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "6 Response",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "7 More files",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "8 Slow query",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "9 Far away",
+    "aria": null,
+    "cls": ""
+   },
+   {
+    "text": "10 Recap",
+    "aria": null,
+    "cls": ""
+   }
+  ]
+ }
+}

@@ -1,0 +1,475 @@
+﻿{
+ "mods": [
+  {
+   "module": "01. Foundations 0/3",
+   "count": "0/3",
+   "open": true,
+   "lessons": [
+    {
+     "id": "request-lifecycle",
+     "title": "How a Request Travels",
+     "soon": false,
+     "done": false,
+     "href": "#/request-lifecycle/1"
+    },
+    {
+     "id": "latency-throughput",
+     "title": "Latency & Throughput",
+     "soon": false,
+     "done": false,
+     "href": "#/latency-throughput/1"
+    },
+    {
+     "id": "napkin-math",
+     "title": "Napkin Math",
+     "soon": false,
+     "done": false,
+     "href": "#/napkin-math/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "02. Scaling 0/5",
+   "count": "0/5",
+   "open": false,
+   "lessons": [
+    {
+     "id": "vertical-horizontal",
+     "title": "Vertical vs Horizontal",
+     "soon": false,
+     "done": false,
+     "href": "#/vertical-horizontal/1"
+    },
+    {
+     "id": "load-balancing",
+     "title": "Load Balancing",
+     "soon": false,
+     "done": false,
+     "href": "#/load-balancing/1"
+    },
+    {
+     "id": "stateless",
+     "title": "Stateless Services",
+     "soon": false,
+     "done": false,
+     "href": "#/stateless/1"
+    },
+    {
+     "id": "caching",
+     "title": "Caching",
+     "soon": false,
+     "done": false,
+     "href": "#/caching/1"
+    },
+    {
+     "id": "cdn",
+     "title": "Content Delivery",
+     "soon": false,
+     "done": false,
+     "href": "#/cdn/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "03. Data & Storage 0/11",
+   "count": "0/11",
+   "open": false,
+   "lessons": [
+    {
+     "id": "sql-nosql",
+     "title": "SQL vs NoSQL",
+     "soon": false,
+     "done": false,
+     "href": "#/sql-nosql/1"
+    },
+    {
+     "id": "indexes",
+     "title": "Indexes",
+     "soon": false,
+     "done": false,
+     "href": "#/indexes/1"
+    },
+    {
+     "id": "storage-engines",
+     "title": "Storage Engines",
+     "soon": false,
+     "done": false,
+     "href": "#/storage-engines/1"
+    },
+    {
+     "id": "replication",
+     "title": "Replication",
+     "soon": false,
+     "done": false,
+     "href": "#/replication/1"
+    },
+    {
+     "id": "sharding",
+     "title": "Sharding",
+     "soon": false,
+     "done": false,
+     "href": "#/sharding/1"
+    },
+    {
+     "id": "consistent-hashing",
+     "title": "Consistent Hashing",
+     "soon": false,
+     "done": false,
+     "href": "#/consistent-hashing/1"
+    },
+    {
+     "id": "unique-ids",
+     "title": "Unique IDs at Scale",
+     "soon": false,
+     "done": false,
+     "href": "#/unique-ids/1"
+    },
+    {
+     "id": "cap",
+     "title": "CAP & Consistency",
+     "soon": false,
+     "done": false,
+     "href": "#/cap/1"
+    },
+    {
+     "id": "consensus",
+     "title": "Consensus & Leaders",
+     "soon": false,
+     "done": false,
+     "href": "#/consensus/1"
+    },
+    {
+     "id": "transactions",
+     "title": "Transactions & Isolation",
+     "soon": false,
+     "done": false,
+     "href": "#/transactions/1"
+    },
+    {
+     "id": "files",
+     "title": "Files & Media",
+     "soon": false,
+     "done": false,
+     "href": "#/files/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "04. Communication 0/4",
+   "count": "0/4",
+   "open": false,
+   "lessons": [
+    {
+     "id": "apis",
+     "title": "REST, RPC & GraphQL",
+     "soon": false,
+     "done": false,
+     "href": "#/apis/1"
+    },
+    {
+     "id": "queues",
+     "title": "Message Queues",
+     "soon": false,
+     "done": false,
+     "href": "#/queues/1"
+    },
+    {
+     "id": "pubsub",
+     "title": "Pub/Sub & Events",
+     "soon": false,
+     "done": false,
+     "href": "#/pubsub/1"
+    },
+    {
+     "id": "realtime",
+     "title": "Real-time Updates",
+     "soon": false,
+     "done": false,
+     "href": "#/realtime/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "05. Reliability 0/4",
+   "count": "0/4",
+   "open": false,
+   "lessons": [
+    {
+     "id": "redundancy",
+     "title": "Redundancy & Failover",
+     "soon": false,
+     "done": false,
+     "href": "#/redundancy/1"
+    },
+    {
+     "id": "rate-limiting",
+     "title": "Rate Limiting",
+     "soon": false,
+     "done": false,
+     "href": "#/rate-limiting/1"
+    },
+    {
+     "id": "timeouts-retries",
+     "title": "Timeouts & Retries",
+     "soon": false,
+     "done": false,
+     "href": "#/timeouts-retries/1"
+    },
+    {
+     "id": "observability",
+     "title": "Observability",
+     "soon": false,
+     "done": false,
+     "href": "#/observability/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "06. Architecture 0/4",
+   "count": "0/4",
+   "open": false,
+   "lessons": [
+    {
+     "id": "microservices",
+     "title": "Monolith vs Microservices",
+     "soon": false,
+     "done": false,
+     "href": "#/microservices/1"
+    },
+    {
+     "id": "service-discovery",
+     "title": "Service Discovery",
+     "soon": false,
+     "done": false,
+     "href": "#/service-discovery/1"
+    },
+    {
+     "id": "sagas",
+     "title": "Sagas & Distributed Tx",
+     "soon": false,
+     "done": false,
+     "href": "#/sagas/1"
+    },
+    {
+     "id": "batch-stream",
+     "title": "Batch & Stream Processing",
+     "soon": false,
+     "done": false,
+     "href": "#/batch-stream/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "07. Security 0/3",
+   "count": "0/3",
+   "open": false,
+   "lessons": [
+    {
+     "id": "authentication",
+     "title": "Authentication",
+     "soon": false,
+     "done": false,
+     "href": "#/authentication/1"
+    },
+    {
+     "id": "authorization",
+     "title": "Authorization",
+     "soon": false,
+     "done": false,
+     "href": "#/authorization/1"
+    },
+    {
+     "id": "encryption",
+     "title": "Encryption & Secrets",
+     "soon": false,
+     "done": false,
+     "href": "#/encryption/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "08. Shipping 0/2",
+   "count": "0/2",
+   "open": false,
+   "lessons": [
+    {
+     "id": "testing",
+     "title": "Testing",
+     "soon": false,
+     "done": false,
+     "href": "#/testing/1"
+    },
+    {
+     "id": "cicd",
+     "title": "CI/CD & Deployments",
+     "soon": false,
+     "done": false,
+     "href": "#/cicd/1"
+    }
+   ],
+   "extras": []
+  },
+  {
+   "module": "09. Whole Systems 0/4",
+   "count": "0/4",
+   "open": false,
+   "lessons": [
+    {
+     "id": "hld-lld",
+     "title": "HLD & LLD",
+     "soon": false,
+     "done": false,
+     "href": "#/hld-lld/1"
+    },
+    {
+     "id": "design-url-shortener",
+     "title": "Design a URL Shortener",
+     "soon": false,
+     "done": false,
+     "href": "#/design-url-shortener/1"
+    },
+    {
+     "id": "design-news-feed",
+     "title": "Design a News Feed",
+     "soon": false,
+     "done": false,
+     "href": "#/design-news-feed/1"
+    },
+    {
+     "id": "design-chat",
+     "title": "Design a Chat System",
+     "soon": false,
+     "done": false,
+     "href": "#/design-chat/1"
+    }
+   ],
+   "extras": []
+  }
+ ],
+ "lessonTotal": 40,
+ "nav": [
+  {
+   "text": "Learn",
+   "cls": "nav__item btn-pop is-active",
+   "dataset": {
+    "nav": "Learn"
+   }
+  },
+  {
+   "text": "Practice",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Practice"
+   }
+  },
+  {
+   "text": "Design Lab",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Design Lab"
+   }
+  },
+  {
+   "text": "Cheatsheets",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Cheatsheets"
+   }
+  },
+  {
+   "text": "Learn",
+   "cls": "nav__item btn-pop is-active",
+   "dataset": {
+    "nav": "Learn"
+   }
+  },
+  {
+   "text": "Practice",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Practice"
+   }
+  },
+  {
+   "text": "Design Lab",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Design Lab"
+   }
+  },
+  {
+   "text": "Cheatsheets",
+   "cls": "nav__item ",
+   "dataset": {
+    "nav": "Cheatsheets"
+   }
+  }
+ ],
+ "topbar": [
+  {
+   "tag": "BUTTON",
+   "cls": "menu-btn",
+   "id": "menu-btn"
+  },
+  {
+   "tag": "A",
+   "cls": "brand",
+   "id": ""
+  },
+  {
+   "tag": "NAV",
+   "cls": "nav",
+   "id": ""
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "search",
+   "id": "search-open"
+  },
+  {
+   "tag": "DIV",
+   "cls": "lang",
+   "id": ""
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "theme-btn",
+   "id": "theme-btn"
+  },
+  {
+   "tag": "A",
+   "cls": "credit",
+   "id": ""
+  }
+ ],
+ "layoutSections": [
+  {
+   "tag": "DIV",
+   "cls": "lesson-head is-fresh",
+   "id": "head"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "card stage",
+   "id": ""
+  },
+  {
+   "tag": "SECTION",
+   "cls": "card timeline is-fresh is-tight",
+   "id": "timeline"
+  }
+ ],
+ "sheetClasses": "sheet",
+ "route": {
+  "hash": "",
+  "path": "/",
+  "search": ""
+ }
+}

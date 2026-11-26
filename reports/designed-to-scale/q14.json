@@ -1,0 +1,40 @@
+﻿{
+ "count": 1,
+ "rules": [
+  {
+   "media": null,
+   "sel": ".sidebar",
+   "css": "flex-direction: column; min-height: 0px; padding-block: 26px 14px; padding-inline: 25px 13px; display: flex;",
+   "transform": "",
+   "vis": ""
+  },
+  {
+   "media": null,
+   "sel": ":root:not([data-layout=\"desktop\"]) .sidebar",
+   "css": "top: 0px; bottom: 0px; z-index: 45; width: min(330px, 88vw); padding-block: 14px calc(12px + env(safe-area-inset-bottom)); border-inline-end: 1.5px solid var(--ink); background: var(--paper); box-shadow: 0 0 60px -18px var(--a-6); visibility: hidden; padding-inline: 18px 12px; transition: transform ",
+   "transform": "translate(-105%)",
+   "vis": "hidden"
+  },
+  {
+   "media": null,
+   "sel": ":root.is-drawer .sidebar",
+   "css": "visibility: visible; transition: transform 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); transform: none;",
+   "transform": "none",
+   "vis": "visible"
+  },
+  {
+   "media": null,
+   "sel": ":root[dir=\"rtl\"]:not([data-layout=\"desktop\"]) .sidebar",
+   "css": "transform: translate(105%);",
+   "transform": "translate(105%)",
+   "vis": ""
+  },
+  {
+   "media": null,
+   "sel": ":root[dir=\"rtl\"].is-drawer .sidebar",
+   "css": "transform: none;",
+   "transform": "none",
+   "vis": ""
+  }
+ ]
+}

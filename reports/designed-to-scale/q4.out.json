@@ -1,0 +1,501 @@
+﻿{
+ "initial": {
+  "label": "initial",
+  "hash": "",
+  "historyLen": 1,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "Users say the shop feels slow",
+  "guideText": "Users say the shop feels slow Before you can make something faster, you need to know where the time goes. So letΓÇÖs follow a single page load.You type shop.example and press Enter. About a sixth of a second later the page",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": true,
+  "nextLabel": "Next: Find address",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":0}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":0}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "afterNext1": {
+  "label": "after Next ΓåÆ",
+  "hash": "#/request-lifecycle/2",
+  "historyLen": 2,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "Find the address (DNS)",
+  "guideText": "Find the address (DNS) Networks route by numeric IP address, not by name. So the browser first asks a DNS resolver: where is shop.example?The answer ΓÇö 203.0.113.7 ΓÇö comes back in about 20 ms. Good to knowAnswers are cach",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": false,
+  "nextLabel": "Next: Connect",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":1}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":1}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "afterNext2": {
+  "label": "after Next ΓåÆΓåÆ",
+  "hash": "#/request-lifecycle/3",
+  "historyLen": 3,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "Open a connection",
+  "guideText": "Open a connection Now the browser opens a connection to 203.0.113.7. A TCP handshake agrees to talk; a TLS handshake sets up encryption. Each needs a round trip ΓÇö there and back.Here a round trip takes 30 ms, so connecti",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": false,
+  "nextLabel": "Next: Request",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":2}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":2}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "afterTimeline8": {
+  "label": "after timeline step 8",
+  "hash": "#/request-lifecycle/8",
+  "historyLen": 4,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "Case: one slow query",
+  "guideText": "Case: one slow query A new ΓÇ£recommended for youΓÇ¥ box ships. Its query sorts every product by a score on each page view, and the database now takes 400 ms to answer.Same network, same handshakes ΓÇö but the page jumps from ",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": false,
+  "nextLabel": "Next: Far away",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":7}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":7}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "afterBack": {
+  "label": "after Back",
+  "hash": "#/request-lifecycle/7",
+  "historyLen": 5,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "One page, forty more requests",
+  "guideText": "One page, forty more requests The HTML is only the start. It references images, stylesheets, scripts and fonts ΓÇö about 40 more files ΓÇö and the browser fetches them all.With old HTTP/1.1 each connection carried one reques",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": false,
+  "nextLabel": "Next: Slow query",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":6}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":6}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "afterHistoryBack": {
+  "label": "after history.back()",
+  "hash": "#/request-lifecycle/8",
+  "historyLen": 5,
+  "title": "How a Request Travels ┬╖ System Design",
+  "stepLabel": "",
+  "timelineCurrent": [
+   {
+    "t": "1 Hit Enter",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "2 Find address",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "3 Connect",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "4 Request",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "5 Fetch data",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "6 Response",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "7 More files",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "8 Slow query",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "9 Far away",
+    "current": null,
+    "cls": ""
+   },
+   {
+    "t": "10 Recap",
+    "current": null,
+    "cls": ""
+   }
+  ],
+  "guideH2": "Case: one slow query",
+  "guideText": "Case: one slow query A new ΓÇ£recommended for youΓÇ¥ box ships. Its query sorts every product by a score on each page view, and the database now takes 400 ms to answer.Same network, same handshakes ΓÇö but the page jumps from ",
+  "goals": [
+   "What DNS does and why it is cached",
+   "Why a connection costs round trips",
+   "The path: browser ΓåÆ server ΓåÆ database ΓåÆ back",
+   "Where page-load time actually goes",
+   "Cases: a slow query and a distant user"
+  ],
+  "backDisabled": false,
+  "nextLabel": "Next: Far away",
+  "docScroll": 0,
+  "last": "{\"lessonId\":\"request-lifecycle\",\"step\":7}",
+  "recent": "[{\"lessonId\":\"request-lifecycle\",\"step\":7}]",
+  "progressText": "Progress 0 / 40 Foundations0/3Scaling0/5Data & Storage0/11Communication0/4Reliability0/4Architecture0/4Security0/3Shipping0/2Whole Systems0/4"
+ },
+ "tools": [
+  {
+   "text": "Fit",
+   "aria": null,
+   "title": "Back to the whole diagram (0)",
+   "pressed": null,
+   "cls": "tool tool--fit"
+  },
+  {
+   "text": "Replay",
+   "aria": null,
+   "title": "Replay this step (R)",
+   "pressed": null,
+   "cls": "tool"
+  },
+  {
+   "text": "Pause",
+   "aria": null,
+   "title": "Pause traffic (Space)",
+   "pressed": null,
+   "cls": "tool"
+  },
+  {
+   "text": "",
+   "aria": "Show the diagram full screen",
+   "title": "Full screen",
+   "pressed": null,
+   "cls": "tool tool--expand"
+  }
+ ],
+ "afterReplay": {
+  "pauseLabel": "Pause"
+ },
+ "afterPause": {
+  "toolLabels": [
+   "Fit",
+   "Replay",
+   "Play",
+   ""
+  ]
+ },
+ "afterExpand": {
+  "stageClass": "card stage is-full",
+  "htmlClass": "has-full",
+  "aria": "Exit full screen"
+ },
+ "afterEscape": {
+  "stageClass": "card stage",
+  "htmlClass": ""
+ },
+ "toast": {
+  "cls": "toast is-on",
+  "text": "Practice is coming soon",
+  "role": "status"
+ }
+}

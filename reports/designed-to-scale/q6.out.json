@@ -1,0 +1,123 @@
+﻿{
+ "open": {
+  "open": false,
+  "hidden": false,
+  "active": true,
+  "label": "Recent2",
+  "groups": [
+   "Recent2",
+   "01 ┬╖ Foundations1/3 done",
+   "02 ┬╖ Scaling0/5 done",
+   "03 ┬╖ Data & Storage0/11 done",
+   "04 ┬╖ Communication0/4 done",
+   "05 ┬╖ Reliability0/4 done",
+   "06 ┬╖ Architecture0/4 done",
+   "07 ┬╖ Security0/3 done",
+   "08 ┬╖ Shipping0/2 done",
+   "09 ┬╖ Whole Systems0/4 done"
+  ],
+  "resultCount": 42,
+  "footer": "ΓåæΓåô move Γå╡ open esc close 40 lessons ┬╖ 445 steps ┬╖ 190 concepts",
+  "dialogClass": "sx__dialog"
+ },
+ "queryCache": {
+  "groups": [
+   "Concepts5",
+   "Stepstop 25 of 70",
+   "Lessons5"
+  ],
+  "items": [
+   {
+    "cls": "sx__item is-sel",
+    "text": "CacheCaching ┬╖ step 3 Add an in-memory cache (such as Redis or Memcached). ConceptΓå╡",
+    "id": "sx-opt-0",
+    "sel": "true"
+   },
+   {
+    "cls": "sx__item",
+    "text": "Cache-asideCaching ┬╖ step 3 This is the cache-aside pattern. ConceptΓå╡",
+    "id": "sx-opt-1",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "Cache stampedeCaching ┬╖ step 8 This is a cache stampede (or thundering herd). ConceptΓå╡",
+    "id": "sx-opt-2",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "Cache penetrationCaching ┬╖ step 10 This is cache penetration. ConceptΓå╡",
+    "id": "sx-opt-3",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "Negative cachingCaching ┬╖ step 11 First fix: negative caching. ConceptΓå╡",
+    "id": "sx-opt-4",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "6 Cache it, or split itSharding ┬╖ step 6 of 9 For a key that is read hot, put it in a cach",
+    "id": "sx-opt-5",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "12 Caches everywhereCaching ┬╖ step 12 of 13 The cache we built is one layer of many. A req",
+    "id": "sx-opt-6",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "3 Put a cache in frontCaching ┬╖ step 3 of 13 Add an in-memory cache (such as Redis or Memc",
+    "id": "sx-opt-7",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "5 The price changed. The cache didnΓÇÖt.Caching ┬╖ step 5 of 13 ΓÇªdatabase has the new price ΓÇö",
+    "id": "sx-opt-8",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "8 Case: the cache stampedeCaching ┬╖ step 8 of 13 The home page is the hottest key in the c",
+    "id": "sx-opt-9",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "8 Case: never cache someoneΓÇÖs cartContent Delivery ┬╖ step 8 of 10 A config change tells th",
+    "id": "sx-opt-10",
+    "sel": null
+   },
+   {
+    "cls": "sx__item",
+    "text": "9 Case: growing a cache clusterConsistent Hashing ┬╖ step 9 of 10 A fleet of Memcached serv",
+    "id": "sx-opt-11",
+    "sel": null
+   }
+  ],
+  "count": 35,
+  "meta": "Caching ┬╖ step 3",
+  "empty": false,
+  "hints": []
+ },
+ "queryEmpty": {
+  "empty": "Nothing matches ΓÇ£zzzznotfoundΓÇ¥ Try a single word, or one of these: load balancercachereplicationconsistent hashingrate limitwebsocketsagasquorum",
+  "count": 0
+ },
+ "closed": {
+  "open": false,
+  "hidden": false
+ },
+ "ctrlK": {
+  "open": false,
+  "active": true
+ },
+ "escClosed": {
+  "open": false
+ }
+}

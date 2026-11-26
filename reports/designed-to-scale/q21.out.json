@@ -1,0 +1,82 @@
+﻿{
+ "speak": null,
+ "speakBtn": null,
+ "voiceMenu": null,
+ "speechSynthesis": true,
+ "voices": 0,
+ "localStorage": {
+  "sdt:theme": "\"light\"",
+  "sdt:progressOpen": "true",
+  "sdt:done": "[\"request-lifecycle\",\"sharding\"]",
+  "sdt:recent": "[{\"lessonId\":\"caching\",\"step\":1},{\"lessonId\":\"sharding\",\"step\":1},{\"lessonId\":\"replication\",\"step\":0},{\"lessonId\":\"design-chat\",\"step\":0},{\"lessonId\":\"design-news-feed\",\"step\":0},{\"lessonId\":\"design-url-shortener\",\"step\":0},{\"lessonId\":\"hld-lld\",\"step\":0},{\"lessonId\":\"cicd\",\"step\":0}]",
+  "sdt:last": "{\"lessonId\":\"caching\",\"step\":1}",
+  "sdt:lang": "\"en\""
+ },
+ "tools": [
+  {
+   "text": "Fit",
+   "title": "Back to the whole diagram (0)",
+   "aria": null,
+   "cls": "tool tool--fit"
+  },
+  {
+   "text": "Replay",
+   "title": "Replay this step (R)",
+   "aria": null,
+   "cls": "tool"
+  },
+  {
+   "text": "Pause",
+   "title": "Pause traffic (Space)",
+   "aria": null,
+   "cls": "tool"
+  },
+  {
+   "text": "",
+   "title": "Full screen",
+   "aria": "Show the diagram full screen",
+   "cls": "tool tool--expand"
+  }
+ ],
+ "legend": null,
+ "chips": [
+  {
+   "k": "p95",
+   "level": "warn",
+   "label": "p95 latency",
+   "value": "450 ms"
+  },
+  {
+   "k": "hitRate",
+   "level": "bad",
+   "label": "Cache hit rate",
+   "value": "0%"
+  },
+  {
+   "k": "dbLoad",
+   "level": "bad",
+   "label": "Database CPU",
+   "value": "92%"
+  },
+  {
+   "k": "fresh",
+   "level": "good",
+   "label": "Data shown",
+   "value": "fresh"
+  }
+ ],
+ "scene": {
+  "viewBox": "-524.89 -112.44 973.85 335.38",
+  "texts": [
+   "App",
+   "Server",
+   "database",
+   "92%",
+   "20,000 users",
+   "WHO READS WHAT",
+   "top 1% of products ΓåÆ 60% of reads",
+   "top 10% of products ΓåÆ 90% of reads",
+   "the same rows, read again and again"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+﻿{
+ "samples": [
+  {
+   "t": 0,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  },
+  {
+   "t": 500,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  },
+  {
+   "t": 1000,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  },
+  {
+   "t": 1500,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  },
+  {
+   "t": 2000,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  },
+  {
+   "t": 2500,
+   "reading": [],
+   "guidePaused": false,
+   "pauseBtn": "Pause"
+  }
+ ],
+ "paused": {
+  "guidePaused": false,
+  "pauseBtn": "Play",
+  "readingOpacity": null
+ },
+ "after": {
+  "guidePaused": false,
+  "pauseBtn": "Pause"
+ }
+}

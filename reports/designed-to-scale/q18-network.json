@@ -1,0 +1,210 @@
+{
+ "info": {
+  "url": "https://designed-to-scale.vercel.app/#/sharding/2",
+  "title": "Sharding · System Design",
+  "iw": 1036,
+  "ih": 647,
+  "layout": "tablet",
+  "theme": null,
+  "lang": "en",
+  "last": "{\"lessonId\":\"sharding\",\"step\":1}",
+  "perfNav": [
+   {
+    "type": "reload",
+    "ttfb": 207,
+    "dom": 578,
+    "load": 610,
+    "transfer": 300
+   }
+  ]
+ },
+ "rows": [
+  {
+   "url": "/",
+   "method": "GET",
+   "type": "Document",
+   "initiator": "other",
+   "status": 200,
+   "mime": "text/html",
+   "bytes": 206,
+   "cache": null,
+   "headers": {}
+  },
+  {
+   "url": "/assets/index-BeXJu_A0.js",
+   "method": "GET",
+   "type": "Script",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "application/javascript",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  },
+  {
+   "url": "/assets/index-CxX-BAVx.css",
+   "method": "GET",
+   "type": "Stylesheet",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "text/css",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  },
+  {
+   "url": "/site.webmanifest",
+   "method": "GET",
+   "type": "Manifest",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "application/manifest+json",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  },
+  {
+   "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.25 0 0 0 0 0.18 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E",
+   "method": "GET",
+   "type": "Image",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "image/svg+xml",
+   "bytes": 0,
+   "cache": null,
+   "headers": {
+    "Referer": ""
+   }
+  },
+  {
+   "url": "/assets/jetbrains-mono-latin-800-normal-D2mQHRMK.woff2",
+   "method": "GET",
+   "type": "Font",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "font/woff2",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/assets/index-CxX-BAVx.css"
+   }
+  },
+  {
+   "url": "/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2",
+   "method": "GET",
+   "type": "Font",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "font/woff2",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/assets/index-CxX-BAVx.css"
+   }
+  },
+  {
+   "url": "/assets/jetbrains-mono-latin-600-normal-C8RAYTDA.woff2",
+   "method": "GET",
+   "type": "Font",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "font/woff2",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/assets/index-CxX-BAVx.css"
+   }
+  },
+  {
+   "url": "/assets/jetbrains-mono-latin-700-normal-BYuf6tUa.woff2",
+   "method": "GET",
+   "type": "Font",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "font/woff2",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/assets/index-CxX-BAVx.css"
+   }
+  },
+  {
+   "url": "/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2",
+   "method": "GET",
+   "type": "Font",
+   "initiator": "parser",
+   "status": 200,
+   "mime": "font/woff2",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Origin": "https://designed-to-scale.vercel.app",
+    "Referer": "https://designed-to-scale.vercel.app/assets/index-CxX-BAVx.css"
+   }
+  },
+  {
+   "url": "/favicon.svg",
+   "method": "GET",
+   "type": "Other",
+   "initiator": "other",
+   "status": 200,
+   "mime": "image/svg+xml",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  },
+  {
+   "url": "/icon-192.png",
+   "method": "GET",
+   "type": "Other",
+   "initiator": "other",
+   "status": 200,
+   "mime": "image/png",
+   "bytes": 0,
+   "cache": "disk",
+   "headers": {
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  },
+  {
+   "url": "/favicon.svg",
+   "method": "GET",
+   "type": "Other",
+   "initiator": "other",
+   "status": 200,
+   "mime": "image/svg+xml",
+   "bytes": 144,
+   "cache": null,
+   "headers": {
+    "Referer": "https://designed-to-scale.vercel.app/"
+   }
+  }
+ ],
+ "consoleMsgs": [],
+ "exceptions": [
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at <anonymous>:58:12",
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at <anonymous>:59:10",
+  "InvalidStateError: Transition was aborted because of invalid state. Document hidden",
+  "InvalidStateError: Transition was aborted because of invalid state. Document hidden",
+  "InvalidStateError: Transition was aborted because of invalid state. Document hidden",
+  "InvalidStateError: Transition was aborted because of invalid state. Document hidden",
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at key (<anonymous>:24:41)\n    at <anonymous>:25:3",
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at key (<anonymous>:24:41)\n    at <anonymous>:27:3",
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at key (<anonymous>:24:41)\n    at <anonymous>:30:3",
+  "TypeError: e.target.closest is not a function\n    at https://designed-to-scale.vercel.app/assets/index-BeXJu_A0.js:746:3918\n    at key (<anonymous>:24:41)\n    at <anonymous>:32:3"
+ ]
+}

@@ -1,0 +1,169 @@
+﻿{
+ "rules": [
+  {
+   "sel": ".stage-svg",
+   "css": "width: 100%; height: 100%; font-family: var(--font); display: block; overflow: visible;"
+  },
+  {
+   "sel": ".is-fresh",
+   "css": "animation: 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) 0s 1 normal none running fresh-in;"
+  },
+  {
+   "sel": ".stage-svg text",
+   "css": "white-space: pre;"
+  },
+  {
+   "sel": ".timeline__steps",
+   "css": "grid-template-columns: repeat(var(--n), minmax(0, 1fr)); display: grid; position: relative;"
+  },
+  {
+   "sel": ".timeline__steps button",
+   "css": "flex-direction: column; align-items: center; width: 100%; padding: 0px 2px; display: flex;"
+  },
+  {
+   "sel": ".timeline__steps button:hover .timeline__dot",
+   "css": "background: var(--c-ffffff); transform: translateY(-1px);"
+  },
+  {
+   "sel": ".timeline__steps li.is-done .timeline__dot",
+   "css": "background: var(--c-e7efd9); border-color: var(--ink-2);"
+  },
+  {
+   "sel": ".timeline__steps li.is-current .timeline__dot",
+   "css": "background: var(--green); border: 1.5px solid var(--ink); box-shadow: 1px 1.5px 0 var(--drop); transform: scale(1.08);"
+  },
+  {
+   "sel": ".timeline__steps li.is-done .timeline__label",
+   "css": "color: var(--ink-2);"
+  },
+  {
+   "sel": ".timeline__steps li.is-current .timeline__label",
+   "css": "color: var(--ink); font-weight: 700;"
+  },
+  {
+   "sel": ".guide__title, .guide__body > *, .guide__body li, .guide__body td, .guide__content .callout",
+   "css": "transition: background-color 0.3s, box-shadow 0.3s;"
+  },
+  {
+   "sel": ".guide__content .is-reading:not(.callout, tr)",
+   "css": "background-color: color-mix(in srgb, var(--c-fbe5bd) 80%, transparent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--c-fbe5bd) 80%, transparent); border-radius: 3px;"
+  },
+  {
+   "sel": ".guide__content tr.is-reading td",
+   "css": "background-color: color-mix(in srgb, var(--c-fbe5bd) 80%, transparent);"
+  },
+  {
+   "sel": ".guide__content .callout.is-reading",
+   "css": "box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-fbe5bd) 90%, transparent);"
+  },
+  {
+   "sel": ".guide.is-paused .guide__content .is-reading:not(.callout, tr)",
+   "css": "background-color: color-mix(in srgb, var(--c-fbe5bd) 35%, transparent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--c-fbe5bd) 35%, transparent);"
+  },
+  {
+   "sel": ".guide.is-paused .guide__content tr.is-reading td",
+   "css": "background-color: color-mix(in srgb, var(--c-fbe5bd) 35%, transparent);"
+  },
+  {
+   "sel": ".guide.is-paused .guide__content .callout.is-reading",
+   "css": "box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-fbe5bd) 40%, transparent);"
+  },
+  {
+   "sel": ".chapter.is-in",
+   "css": "animation: 0.36s cubic-bezier(0.2, 0.7, 0.2, 1) 80ms 1 normal both running chip-in;"
+  },
+  {
+   "sel": ".guide__content",
+   "css": "scrollbar-width: thin; flex: 1 1 0%; min-height: 0px; margin-block: 0px; margin-inline: -8px; padding-inline: 8px; position: relative; overflow: hidden auto;"
+  },
+  {
+   "sel": ".guide__content.is-in > *",
+   "css": "animation: 0.36s cubic-bezier(0.2, 0.7, 0.2, 1) 0.13s 1 normal both running guide-in;"
+  },
+  {
+   "sel": ".guide__content.is-in > :nth-child(2)",
+   "css": "animation-delay: 0.16s;"
+  },
+  {
+   "sel": ".guide__content.is-in > :nth-child(3)",
+   "css": "animation-delay: 0.19s;"
+  },
+  {
+   "sel": ".guide__content.is-in > :nth-child(4)",
+   "css": "animation-delay: 0.22s;"
+  },
+  {
+   "sel": ".sx__dialog",
+   "css": "border: 1.5px solid var(--ink); background: var(--card); width: 740px; max-height: min(660px, 100% - 130px); box-shadow: 3px 4px 0 var(--drop), 0 40px 80px -30px var(--a-21); opacity: 0; border-radius: 14px; flex-direction: column; transition: opacity 0.16s, t"
+  },
+  {
+   "sel": ".sx.is-open .sx__dialog",
+   "css": "opacity: 1; transform: translate(-50%) scale(1);"
+  },
+  {
+   "sel": ".toast",
+   "css": "z-index: 35; border: 1.5px solid var(--ink); background: var(--c-fbf7f1); box-shadow: 2px 3px 0 var(--drop), 0 18px 36px -18px var(--a-23); opacity: 0; pointer-events: none; border-radius: 12px; align-items: center; gap: 12px; padding-block: 10px; padding-inli"
+  },
+  {
+   "sel": ".toast.is-on",
+   "css": "opacity: 1; transform: translate(-50%);"
+  },
+  {
+   "sel": ".toast__icon",
+   "css": "border: 1.3px solid var(--ink-2); background: var(--green); border-radius: 9px; flex: 0 0 auto; place-items: center; width: 32px; height: 32px; display: grid;"
+  },
+  {
+   "sel": ".toast__text",
+   "css": "white-space: nowrap; font-size: 13px; font-weight: 800;"
+  },
+  {
+   "sel": ":root.cards-inline .guide__card",
+   "css": "margin: 2px 0px 14px; display: block;"
+  },
+  {
+   "sel": ":root:not([data-layout=\"desktop\"]) .sx__dialog",
+   "css": "width: min(740px, -20px + 100vw); max-height: calc(100dvh - 20px); top: 10px;"
+  },
+  {
+   "sel": ":root:not([data-layout=\"desktop\"]) .toast",
+   "css": "max-width: calc(-24px + 100vw); position: fixed; top: 64px;"
+  },
+  {
+   "sel": ".stage.is-full",
+   "css": "z-index: 50; border-radius: 0px; margin: 0px; position: fixed; inset: 0px; height: auto !important;"
+  },
+  {
+   "sel": ":root[data-layout=\"stack\"] .guide__content",
+   "css": "flex: 0 0 auto; margin: 0px; padding: 0px; overflow: visible;"
+  },
+  {
+   "sel": ".stage-svg",
+   "css": "direction: ltr;"
+  }
+ ],
+ "guideContent": {
+  "transition": "all",
+  "animation": "none",
+  "transform": "none"
+ },
+ "stageSvg": {
+  "transition": "all",
+  "animation": "none"
+ },
+ "keyframes": [
+  "value-in",
+  "fresh-in",
+  "chip-flash",
+  "held",
+  "fx-burst",
+  "fx-fade",
+  "fx-pop",
+  "spot",
+  "moved",
+  "pulse",
+  "speak-wave",
+  "chip-in",
+  "guide-in",
+  "guide-out"
+ ]
+}

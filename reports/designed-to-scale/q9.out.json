@@ -1,0 +1,1707 @@
+﻿[
+ {
+  "id": "request-lifecycle",
+  "h1": "How a Request Travels",
+  "head": "01. Foundations / Lesson 1 of 3 How a Request Travels 10 min Beginner 10 steps Follow one page load hop by hop ΓÇö and find out where the time really goes.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Hit Enter",
+   "Find address",
+   "Connect",
+   "Request",
+   "Fetch data",
+   "Response",
+   "More files",
+   "Slow query",
+   "Far away",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "dns",
+    "label": "DNS lookup",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "connect",
+    "label": "Connect",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "request",
+    "label": "Request + server",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "download",
+    "label": "Download",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "total",
+    "label": "Total",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Users say the shop feels slow"
+ },
+ {
+  "id": "latency-throughput",
+  "h1": "Latency & Throughput",
+  "head": "01. Foundations / Lesson 2 of 3 Latency & Throughput 11 min Beginner 10 steps Two questions about speed ΓÇö and why busy servers slow down before theyΓÇÖre full.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Two numbers",
+   "Busier",
+   "Hockey stick",
+   "Averages lie",
+   "Add capacity",
+   "Distance",
+   "In flight",
+   "Fan-out",
+   "Batching",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "p50",
+    "label": "p50 latency",
+    "value": "120 ms"
+   },
+   {
+    "k": "p99",
+    "label": "p99 latency",
+    "value": "180 ms"
+   },
+   {
+    "k": "throughput",
+    "label": "Throughput",
+    "value": "50 req/s"
+   },
+   {
+    "k": "util",
+    "label": "Utilization",
+    "value": "10%"
+   }
+  ],
+  "guideH2": "Two different questions"
+ },
+ {
+  "id": "napkin-math",
+  "h1": "Napkin Math",
+  "head": "01. Foundations / Lesson 3 of 3 Napkin Math 10 min Beginner 9 steps Turn a product idea into servers and terabytes with math that fits on a napkin.",
+  "meta": [],
+  "stepCount": 9,
+  "steps": [
+   "The question",
+   "Requests / s",
+   "Peak",
+   "Servers",
+   "Storage",
+   "Bandwidth",
+   "Cache size",
+   "Numbers",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "dau",
+    "label": "Daily users",
+    "value": "10M"
+   },
+   {
+    "k": "avg",
+    "label": "Avg req / s",
+    "value": "?"
+   },
+   {
+    "k": "peak",
+    "label": "Peak req / s",
+    "value": "?"
+   },
+   {
+    "k": "servers",
+    "label": "Servers",
+    "value": "?"
+   },
+   {
+    "k": "storage",
+    "label": "Storage / year",
+    "value": "?"
+   }
+  ],
+  "guideH2": "Will one server do?"
+ },
+ {
+  "id": "vertical-horizontal",
+  "h1": "Vertical vs Horizontal Scaling",
+  "head": "02. Scaling / Lesson 1 of 5 Vertical vs Horizontal Scaling 11 min Beginner 11 steps Your one server is melting. Do you buy a bigger one, or more of them?",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "One server",
+   "Viral spike",
+   "Scale up",
+   "The ceiling",
+   "One failure",
+   "Scale out",
+   "Night time",
+   "Autoscale",
+   "Flash sale",
+   "Who routes?",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "users",
+    "label": "Users",
+    "value": "100"
+   },
+   {
+    "k": "rps",
+    "label": "Requests / s",
+    "value": "4"
+   },
+   {
+    "k": "p95",
+    "label": "p95 latency",
+    "value": "80 ms"
+   },
+   {
+    "k": "errors",
+    "label": "Errors",
+    "value": "0%"
+   },
+   {
+    "k": "cost",
+    "label": "Cost / month",
+    "value": "$150"
+   }
+  ],
+  "guideH2": "It starts with one server"
+ },
+ {
+  "id": "load-balancing",
+  "h1": "Load Balancing",
+  "head": "02. Scaling / Lesson 2 of 5 Load Balancing 12 min Beginner 12 steps One front door for many servers ΓÇö and the rules for who gets which request.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "Hot spot",
+   "Add an LB",
+   "Round robin",
+   "Heavy work",
+   "Least conns",
+   "Health checks",
+   "LB fails",
+   "Standby",
+   "Failover",
+   "By path",
+   "Deploy",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "users",
+    "label": "Users",
+    "value": "200,000"
+   },
+   {
+    "k": "rps",
+    "label": "Requests / s",
+    "value": "6,000"
+   },
+   {
+    "k": "p95",
+    "label": "p95 latency",
+    "value": "1.8 s"
+   },
+   {
+    "k": "errors",
+    "label": "Errors",
+    "value": "12%"
+   },
+   {
+    "k": "healthy",
+    "label": "Healthy servers",
+    "value": "3 / 3"
+   }
+  ],
+  "guideH2": "Three servers, one address"
+ },
+ {
+  "id": "stateless",
+  "h1": "Stateless Services",
+  "head": "02. Scaling / Lesson 3 of 5 Stateless Services 10 min Beginner 10 steps Why the next request must work on any server ΓÇö and where the state goes instead.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Logged in",
+   "Logged out",
+   "Sticky",
+   "A dies",
+   "Shared store",
+   "Lose one",
+   "Tokens",
+   "Uploads",
+   "Object store",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "ok",
+    "label": "AliceΓÇÖs requests OK",
+    "value": "1 / 1"
+   },
+   {
+    "k": "survive",
+    "label": "Survives losing a server",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "scale",
+    "label": "Add servers any time",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "extra",
+    "label": "Cost per request",
+    "value": "+0 ms"
+   }
+  ],
+  "guideH2": "Alice logs in"
+ },
+ {
+  "id": "caching",
+  "h1": "Caching",
+  "head": "02. Scaling / Lesson 4 of 5 Caching 14 min Beginner 13 steps Keep the answers people ask for most somewhere much faster than the database.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "DB melts",
+   "Same reads",
+   "Add cache",
+   "Hit rate",
+   "Stale",
+   "Invalidate",
+   "Eviction",
+   "Stampede",
+   "One fetch",
+   "Missing keys",
+   "Bloom filter",
+   "Layers",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "p95",
+    "label": "p95 latency",
+    "value": "450 ms"
+   },
+   {
+    "k": "hitRate",
+    "label": "Cache hit rate",
+    "value": "0%"
+   },
+   {
+    "k": "dbLoad",
+    "label": "Database CPU",
+    "value": "92%"
+   },
+   {
+    "k": "fresh",
+    "label": "Data shown",
+    "value": "fresh"
+   }
+  ],
+  "guideH2": "Every page hits the database"
+ },
+ {
+  "id": "cdn",
+  "h1": "Content Delivery",
+  "head": "02. Scaling / Lesson 5 of 5 Content Delivery 10 min Beginner 10 steps Copy what everyone downloads to servers near your users ΓÇö and stop fighting the speed of light.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Far away",
+   "Same bytes",
+   "Edges",
+   "Cold edge",
+   "Old files",
+   "Versioning",
+   "Spike",
+   "Private",
+   "Shield",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "lon",
+    "label": "London latency",
+    "value": "80 ms"
+   },
+   {
+    "k": "syd",
+    "label": "Sydney latency",
+    "value": "210 ms"
+   },
+   {
+    "k": "origin",
+    "label": "Origin load",
+    "value": "9,000 req/s"
+   },
+   {
+    "k": "hitRate",
+    "label": "Cache hit rate",
+    "value": "0%"
+   }
+  ],
+  "guideH2": "Your users are far away"
+ },
+ {
+  "id": "sql-nosql",
+  "h1": "SQL vs NoSQL",
+  "head": "03. Data & Storage / Lesson 1 of 11 SQL vs NoSQL 11 min Beginner 10 steps Tables, documents or plain keys ΓÇö what each kind of database is good at, and what it gives up.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Tables",
+   "Transactions",
+   "Growing pains",
+   "Documents",
+   "KeyΓÇôvalue",
+   "Trade-offs",
+   "Use both",
+   "Search",
+   "Specialists",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "joins",
+    "label": "Joins",
+    "value": "yes"
+   },
+   {
+    "k": "tx",
+    "label": "Transactions",
+    "value": "yes"
+   },
+   {
+    "k": "schema",
+    "label": "Schema",
+    "value": "fixed"
+   },
+   {
+    "k": "scaleOut",
+    "label": "Scale out writes",
+    "value": "hard"
+   }
+  ],
+  "guideH2": "Data in tables"
+ },
+ {
+  "id": "indexes",
+  "h1": "Indexes",
+  "head": "03. Data & Storage / Lesson 2 of 11 Indexes 12 min Beginner 11 steps Why the same query can take two seconds or two milliseconds.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Slow query",
+   "Phone book",
+   "Add index",
+   "Why shallow",
+   "Writes pay",
+   "Column order",
+   "Wildcards",
+   "Selectivity",
+   "EXPLAIN",
+   "Covering",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "p95",
+    "label": "p95 latency",
+    "value": "2.3 s"
+   },
+   {
+    "k": "rows",
+    "label": "Rows read",
+    "value": "50,000,000"
+   },
+   {
+    "k": "writeCost",
+    "label": "Writes per insert",
+    "value": "1"
+   },
+   {
+    "k": "indexes",
+    "label": "Indexes",
+    "value": "0"
+   }
+  ],
+  "guideH2": "Finding one user takes two seconds"
+ },
+ {
+  "id": "storage-engines",
+  "h1": "Storage Engines",
+  "head": "03. Data & Storage / Lesson 3 of 11 Storage Engines 14 min Intermediate 13 steps What a database actually does with your write ΓÇö and why some are built for reads and others for writes.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "Two places",
+   "Crash",
+   "Log first",
+   "How sure?",
+   "Checkpoint",
+   "B-tree",
+   "Firehose",
+   "LSM-tree",
+   "Find a key",
+   "Compaction",
+   "Choosing",
+   "Columns",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "crashSafe",
+    "label": "Survives a crash",
+    "value": "?"
+   },
+   {
+    "k": "wps",
+    "label": "Writes / second",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "diskPattern",
+    "label": "Disk writes",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "lookupCost",
+    "label": "Reads per lookup",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Memory and disk"
+ },
+ {
+  "id": "replication",
+  "h1": "Replication",
+  "head": "03. Data & Storage / Lesson 4 of 11 Replication 12 min Beginner 11 steps Keep copies of the database on several machines ΓÇö for more reads and for survival.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "One DB",
+   "Copies",
+   "Read replicas",
+   "Lag",
+   "Read your writes",
+   "Leader dies",
+   "Failover",
+   "Reports",
+   "Not a backup",
+   "Styles",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "dbLoad",
+    "label": "Database CPU",
+    "value": "90%"
+   },
+   {
+    "k": "reads",
+    "label": "Read capacity",
+    "value": "1├ù"
+   },
+   {
+    "k": "lag",
+    "label": "Replica lag",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "writes",
+    "label": "Writes",
+    "value": "ok"
+   }
+  ],
+  "guideH2": "One database, doing everything"
+ },
+ {
+  "id": "sharding",
+  "h1": "Sharding",
+  "head": "03. Data & Storage / Lesson 5 of 11 Sharding 11 min Intermediate 9 steps When the data or the writes outgrow one machine, split them across many.",
+  "meta": [],
+  "stepCount": 9,
+  "steps": [
+   "Too big",
+   "Split by range",
+   "Hot spot",
+   "Hash it",
+   "Celebrity",
+   "Split key",
+   "Cross-shard",
+   "Add a shard",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "shards",
+    "label": "Shards",
+    "value": "1"
+   },
+   {
+    "k": "perShard",
+    "label": "Writes per shard",
+    "value": "40,000/s"
+   },
+   {
+    "k": "hottest",
+    "label": "Busiest shard",
+    "value": "100% of writes"
+   },
+   {
+    "k": "size",
+    "label": "Data per shard",
+    "value": "20 TB"
+   }
+  ],
+  "guideH2": "Too big for one machine"
+ },
+ {
+  "id": "consistent-hashing",
+  "h1": "Consistent Hashing",
+  "head": "03. Data & Storage / Lesson 6 of 11 Consistent Hashing 10 min Intermediate 10 steps Add or remove servers and move only a sliver of the data.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "The problem",
+   "The ring",
+   "Keys",
+   "Add a server",
+   "Remove one",
+   "Uneven",
+   "Virtual nodes",
+   "Replicas",
+   "Cache fleet",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "nodes",
+    "label": "Servers on ring",
+    "value": "4"
+   },
+   {
+    "k": "moved",
+    "label": "Keys moved",
+    "value": "80%"
+   },
+   {
+    "k": "maxShare",
+    "label": "Biggest share",
+    "value": "25%"
+   }
+  ],
+  "guideH2": "hash % N breaks when N changes"
+ },
+ {
+  "id": "unique-ids",
+  "h1": "Unique IDs at Scale",
+  "head": "03. Data & Storage / Lesson 7 of 11 Unique IDs at Scale 13 min Intermediate 12 steps Giving every row a name nobody else will ever use ΓÇö without one counter everyone has to queue for.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "One counter",
+   "Shards collide",
+   "Ticket server",
+   "Blocks",
+   "UUIDs",
+   "Random hurts",
+   "Time first",
+   "Snowflake",
+   "Clock",
+   "Leaks",
+   "Choosing",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "collide",
+    "label": "Duplicate ids",
+    "value": "no"
+   },
+   {
+    "k": "idSize",
+    "label": "Id size",
+    "value": "64 bits"
+   },
+   {
+    "k": "sortable",
+    "label": "Sorted by time",
+    "value": "yes"
+   },
+   {
+    "k": "idDep",
+    "label": "Depends on",
+    "value": "one database"
+   }
+  ],
+  "guideH2": "Every row needs a name"
+ },
+ {
+  "id": "cap",
+  "h1": "CAP & Consistency",
+  "head": "03. Data & Storage / Lesson 8 of 11 CAP & Consistency 12 min Intermediate 11 steps When the network splits, copies of your data must choose between being right and being reachable.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Two regions",
+   "Partition",
+   "Choose C",
+   "Choose A",
+   "Heal",
+   "Clocks",
+   "CAP",
+   "Quorums",
+   "Per operation",
+   "Models",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "consistent",
+    "label": "Consistent",
+    "value": "yes"
+   },
+   {
+    "k": "available",
+    "label": "Available",
+    "value": "yes"
+   },
+   {
+    "k": "errors",
+    "label": "Errors",
+    "value": "0%"
+   },
+   {
+    "k": "conflicts",
+    "label": "Conflicts",
+    "value": "0"
+   }
+  ],
+  "guideH2": "Copies in two regions"
+ },
+ {
+  "id": "consensus",
+  "h1": "Consensus & Leader Election",
+  "head": "03. Data & Storage / Lesson 9 of 11 Consensus & Leader Election 14 min Advanced 12 steps How a group of servers agrees on one leader and one history ΓÇö even when some of them canΓÇÖt be reached.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "One leader",
+   "Split brain",
+   "Majority",
+   "Election",
+   "Commit",
+   "Heal",
+   "How many",
+   "Zombie",
+   "Fencing",
+   "The price",
+   "In practice",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "leaders",
+    "label": "Leaders",
+    "value": "1"
+   },
+   {
+    "k": "term",
+    "label": "Term",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "writes",
+    "label": "Writes",
+    "value": "ok"
+   },
+   {
+    "k": "canLose",
+    "label": "Can lose",
+    "value": "?"
+   }
+  ],
+  "guideH2": "One leader, two followers"
+ },
+ {
+  "id": "transactions",
+  "h1": "Transactions & Isolation",
+  "head": "03. Data & Storage / Lesson 10 of 11 Transactions & Isolation 14 min Intermediate 13 steps Two people, one seat, the same millisecond. How databases keep concurrent changes correct.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "Last seat",
+   "Race",
+   "Not enough",
+   "Lock",
+   "Atomic",
+   "Versions",
+   "Levels",
+   "Phantom",
+   "Deadlock",
+   "Constraint",
+   "Slow lock",
+   "Hold",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "seatsLeft",
+    "label": "Seats left",
+    "value": "1"
+   },
+   {
+    "k": "sold",
+    "label": "Tickets sold",
+    "value": "0"
+   },
+   {
+    "k": "oversold",
+    "label": "Oversold",
+    "value": "no"
+   },
+   {
+    "k": "lockWait",
+    "label": "Ben waits",
+    "value": "0 ms"
+   }
+  ],
+  "guideH2": "One seat left"
+ },
+ {
+  "id": "files",
+  "h1": "Files & Media",
+  "head": "03. Data & Storage / Lesson 11 of 11 Files & Media 14 min Intermediate 13 steps Photos and videos donΓÇÖt belong in your database ΓÇö where they go instead, and how they get there and back.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "BLOBs",
+   "It chokes",
+   "Object storage",
+   "Through servers",
+   "Presigned",
+   "In parts",
+   "Processing",
+   "CDN",
+   "Video",
+   "In step",
+   "Lifecycle",
+   "Public bucket",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "dbGrowth",
+    "label": "Database grows",
+    "value": "+2 GB / day"
+   },
+   {
+    "k": "appTraffic",
+    "label": "Through app servers",
+    "value": "every photo, both ways"
+   },
+   {
+    "k": "imgLoad",
+    "label": "Photo load",
+    "value": "180 ms"
+   },
+   {
+    "k": "storeCost",
+    "label": "Storage / month",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Photos in the database"
+ },
+ {
+  "id": "apis",
+  "h1": "REST, RPC & GraphQL",
+  "head": "04. Communication / Lesson 1 of 4 REST, RPC & GraphQL 11 min Beginner 10 steps Three ways for programs to ask each other for things ΓÇö and what each costs a phone on 4G.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Contract",
+   "REST",
+   "On 4G",
+   "GraphQL",
+   "The catch",
+   "RPC",
+   "Pagination",
+   "Versions",
+   "Choosing",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "trips",
+    "label": "Round trips / screen",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "payload",
+    "label": "Downloaded",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "screenMs",
+    "label": "Screen ready",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "unused",
+    "label": "Unused data",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Programs need a contract"
+ },
+ {
+  "id": "queues",
+  "h1": "Message Queues",
+  "head": "04. Communication / Lesson 2 of 4 Message Queues 12 min Beginner 11 steps Answer right away, do the slow work later ΓÇö and never lose a job along the way.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Slow upload",
+   "Add a queue",
+   "Spike",
+   "More workers",
+   "Crash",
+   "Acks",
+   "Poison",
+   "Order",
+   "Partitions",
+   "Backpressure",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "respond",
+    "label": "Upload response",
+    "value": "30.0 s"
+   },
+   {
+    "k": "backlog",
+    "label": "Backlog",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "workers",
+    "label": "Workers",
+    "value": "0"
+   },
+   {
+    "k": "lost",
+    "label": "Lost jobs",
+    "value": "25%"
+   }
+  ],
+  "guideH2": "Slow work inside the request"
+ },
+ {
+  "id": "pubsub",
+  "h1": "Pub/Sub & Events",
+  "head": "04. Communication / Lesson 3 of 4 Pub/Sub & Events 10 min Beginner 10 steps Announce that something happened, and let whoever cares react ΓÇö without anyone waiting.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "Call everyone",
+   "Email down",
+   "Publish",
+   "Queue vs topic",
+   "New subscriber",
+   "Catch up",
+   "Trade-offs",
+   "Outbox",
+   "Replay",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "checkout",
+    "label": "Checkout time",
+    "value": "920 ms"
+   },
+   {
+    "k": "knows",
+    "label": "Order service calls",
+    "value": "4 services"
+   },
+   {
+    "k": "breaks",
+    "label": "Email outage breaks checkout",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "subs",
+    "label": "Subscribers",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Checkout calls everyone"
+ },
+ {
+  "id": "realtime",
+  "h1": "Real-time Updates",
+  "head": "04. Communication / Lesson 4 of 4 Real-time Updates 11 min Beginner 10 steps How the server tells you something happened ΓÇö chat, live scores, notifications.",
+  "meta": [],
+  "stepCount": 10,
+  "steps": [
+   "No way in",
+   "Polling",
+   "At scale",
+   "Long polling",
+   "SSE",
+   "WebSockets",
+   "Many servers",
+   "Offline",
+   "Presence",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "delay",
+    "label": "Message delay",
+    "value": "never"
+   },
+   {
+    "k": "rpm",
+    "label": "Requests / user / min",
+    "value": "0"
+   },
+   {
+    "k": "wasted",
+    "label": "Empty responses",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "conns",
+    "label": "Open connections",
+    "value": "0"
+   }
+  ],
+  "guideH2": "Bob sent a message. How does Alice find out?"
+ },
+ {
+  "id": "redundancy",
+  "h1": "Redundancy & Failover",
+  "head": "05. Reliability / Lesson 1 of 4 Redundancy & Failover 12 min Intermediate 12 steps Everything fails eventually. Design so that no single failure takes you down.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "Nines",
+   "SPOFs",
+   "Two of each",
+   "One building",
+   "Zones",
+   "Zone fails",
+   "RTO & RPO",
+   "Chaos",
+   "Bad deploy",
+   "Canary",
+   "Regions",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "avail",
+    "label": "Availability",
+    "value": "99.7%"
+   },
+   {
+    "k": "downtime",
+    "label": "Downtime / year",
+    "value": "26 h"
+   },
+   {
+    "k": "spofs",
+    "label": "Single points of failure",
+    "value": "3"
+   },
+   {
+    "k": "survives",
+    "label": "Survives losing",
+    "value": "nothing"
+   }
+  ],
+  "guideH2": "How available is one of everything?"
+ },
+ {
+  "id": "rate-limiting",
+  "h1": "Rate Limiting",
+  "head": "05. Reliability / Lesson 2 of 4 Rate Limiting 10 min Intermediate 9 steps Give every client a fair budget, so one runaway script canΓÇÖt take everyone down.",
+  "meta": [],
+  "stepCount": 9,
+  "steps": [
+   "Runaway",
+   "Limit",
+   "Token bucket",
+   "Algorithms",
+   "Many gateways",
+   "Back off",
+   "Tenants",
+   "Shedding",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "abuser",
+    "label": "Runaway script",
+    "value": "5,000 req/s"
+   },
+   {
+    "k": "served",
+    "label": "Real users served",
+    "value": "61%"
+   },
+   {
+    "k": "apiCpu",
+    "label": "API CPU",
+    "value": "99%"
+   },
+   {
+    "k": "limited",
+    "label": "Rejected (429)",
+    "value": "0/s"
+   }
+  ],
+  "guideH2": "One script, everyone suffers"
+ },
+ {
+  "id": "timeouts-retries",
+  "h1": "Timeouts & Retries",
+  "head": "05. Reliability / Lesson 3 of 4 Timeouts & Retries 11 min Intermediate 11 steps Calling a struggling service safely: give up in time, retry carefully, and know when to stop.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Slow call",
+   "Timeout",
+   "Retry",
+   "Retry storm",
+   "Backoff",
+   "Breaker",
+   "Closed",
+   "Idempotency",
+   "Deadlines",
+   "Bulkheads",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "success",
+    "label": "Checkouts OK",
+    "value": "40%"
+   },
+   {
+    "k": "p99",
+    "label": "p99 latency",
+    "value": "30.0 s"
+   },
+   {
+    "k": "payLoad",
+    "label": "Load on payments",
+    "value": "1├ù"
+   },
+   {
+    "k": "threads",
+    "label": "Order threads busy",
+    "value": "200 / 200 busy"
+   }
+  ],
+  "guideH2": "One slow service takes down another"
+ },
+ {
+  "id": "observability",
+  "h1": "Observability",
+  "head": "05. Reliability / Lesson 4 of 4 Observability 11 min Intermediate 9 steps Metrics, logs and traces: how to find out whatΓÇÖs wrong, where, and why ΓÇö fast.",
+  "meta": [],
+  "stepCount": 9,
+  "steps": [
+   "ItΓÇÖs slow",
+   "Metrics",
+   "Alerts",
+   "Logs",
+   "Traces",
+   "Fixed",
+   "Incident",
+   "Post-mortem",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "detect",
+    "label": "Time to notice",
+    "value": "2 h (support tickets)"
+   },
+   {
+    "k": "locate",
+    "label": "Time to find cause",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "p99",
+    "label": "p99 latency",
+    "value": "2.4 s"
+   },
+   {
+    "k": "signals",
+    "label": "Signals",
+    "value": "none"
+   }
+  ],
+  "guideH2": "ΓÇ£Checkout is slow.ΓÇ¥ Where?"
+ },
+ {
+  "id": "microservices",
+  "h1": "Monolith vs Microservices",
+  "head": "06. Architecture / Lesson 1 of 4 Monolith vs Microservices 14 min Intermediate 12 steps One codebase or many services? What each buys you, what each costs, and how to move between them.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "Monolith",
+   "Growing pains",
+   "Split",
+   "Own data",
+   "Network",
+   "Distributed monolith",
+   "Joins?",
+   "Local copy",
+   "Contracts",
+   "Choosing",
+   "Strangler",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "deploys",
+    "label": "Deploys / day",
+    "value": "1"
+   },
+   {
+    "k": "blast",
+    "label": "A bug takes down",
+    "value": "whole site"
+   },
+   {
+    "k": "hops",
+    "label": "Network hops / page",
+    "value": "1"
+   },
+   {
+    "k": "opsCost",
+    "label": "Ops overhead",
+    "value": "low"
+   }
+  ],
+  "guideH2": "One app, one deploy"
+ },
+ {
+  "id": "service-discovery",
+  "h1": "Service Discovery & Gateways",
+  "head": "06. Architecture / Lesson 2 of 4 Service Discovery & Gateways 13 min Intermediate 13 steps How services find each other when instances come and go ΓÇö and one front door for everyone outside.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "Config",
+   "Churn",
+   "Registry",
+   "Churn again",
+   "Who balances",
+   "DNS",
+   "Too early",
+   "Ready",
+   "Registry down",
+   "Plumbing",
+   "Mesh",
+   "Gateway",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "deadCalls",
+    "label": "Calls to dead instances",
+    "value": "0%"
+   },
+   {
+    "k": "instances",
+    "label": "Payments instances",
+    "value": "2"
+   },
+   {
+    "k": "lookup",
+    "label": "How orders finds payments",
+    "value": "hard-coded IPs"
+   }
+  ],
+  "guideH2": "Orders calls Payments"
+ },
+ {
+  "id": "sagas",
+  "h1": "Sagas & Distributed Transactions",
+  "head": "06. Architecture / Lesson 3 of 4 Sagas & Distributed Transactions 13 min Advanced 11 steps One action, several services, several databases: how to keep it all-or-nothing without one big transaction.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Half a trip",
+   "2PC",
+   "Blocked",
+   "Saga",
+   "Orchestration",
+   "Choreography",
+   "In between",
+   "Resume",
+   "Undo fails",
+   "Unknown",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "allOrNothing",
+    "label": "Trips all-or-nothing",
+    "value": "no"
+   },
+   {
+    "k": "blocked",
+    "label": "Locks held waiting",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "coord",
+    "label": "Coordination",
+    "value": "none"
+   }
+  ],
+  "guideH2": "One trip, three databases"
+ },
+ {
+  "id": "batch-stream",
+  "h1": "Batch & Stream Processing",
+  "head": "06. Architecture / Lesson 4 of 4 Batch & Stream Processing 15 min Intermediate 14 steps Crunching billions of events: overnight in big batches, or continuously as they arrive.",
+  "meta": [],
+  "stepCount": 14,
+  "steps": [
+   "Live DB",
+   "Batch",
+   "Map/reduce",
+   "Skew",
+   "Combine",
+   "Too late",
+   "Stream",
+   "Windows",
+   "Late events",
+   "Lag",
+   "Partitions",
+   "Unique",
+   "Both",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "freshness",
+    "label": "Results age",
+    "value": "live"
+   },
+   {
+    "k": "prodLoad",
+    "label": "Production DB load",
+    "value": "95%"
+   },
+   {
+    "k": "eventsDay",
+    "label": "Events / day",
+    "value": "2 billion"
+   },
+   {
+    "k": "exact",
+    "label": "Counts exact",
+    "value": "yes"
+   }
+  ],
+  "guideH2": "Analytics on the production database"
+ },
+ {
+  "id": "authentication",
+  "h1": "Authentication",
+  "head": "07. Security / Lesson 1 of 3 Authentication 13 min Intermediate 12 steps Proving who someone is ΓÇö without becoming the reason their password leaks.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "Plain text",
+   "Hashing",
+   "Session",
+   "Reset",
+   "Stuffing",
+   "Slow down",
+   "2nd factor",
+   "Phishing",
+   "Passkeys",
+   "Use a provider",
+   "Tokens",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "leak",
+    "label": "If the user table leaks",
+    "value": "all passwords"
+   },
+   {
+    "k": "stuffing",
+    "label": "Stolen-password logins",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "mfa",
+    "label": "Second factor",
+    "value": "no"
+   }
+  ],
+  "guideH2": "A table full of passwords"
+ },
+ {
+  "id": "authorization",
+  "h1": "Authorization",
+  "head": "07. Security / Lesson 2 of 3 Authorization 13 min Intermediate 13 steps Knowing who someone is doesnΓÇÖt tell you what they may see or do. Checking that, everywhere.",
+  "meta": [],
+  "stepCount": 13,
+  "steps": [
+   "Change the URL",
+   "Ownership",
+   "Mass assign",
+   "Row-level",
+   "Roles",
+   "Sharing",
+   "Policy",
+   "Master key",
+   "Least privilege",
+   "Deputy",
+   "On behalf",
+   "Audit",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "exposed",
+    "label": "OthersΓÇÖ data exposed",
+    "value": "yes"
+   },
+   {
+    "k": "checks",
+    "label": "Permission checks",
+    "value": "login only"
+   },
+   {
+    "k": "privilege",
+    "label": "Service access",
+    "value": "everything"
+   }
+  ],
+  "guideH2": "Logged in is not the same as allowed"
+ },
+ {
+  "id": "encryption",
+  "h1": "Encryption & Secrets",
+  "head": "07. Security / Lesson 3 of 3 Encryption & Secrets 13 min Intermediate 12 steps Protecting data on the wire, on disk, and the keys and passwords your services use.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "Caf├⌐ Wi-Fi",
+   "TLS",
+   "Expired",
+   "Inside too",
+   "Stolen backup",
+   "At rest",
+   "Rotation",
+   "Leaked key",
+   "Vault",
+   "Tokenize",
+   "End-to-end",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "inTransit",
+    "label": "Encrypted in transit",
+    "value": "no"
+   },
+   {
+    "k": "atRest",
+    "label": "Encrypted at rest",
+    "value": "no"
+   },
+   {
+    "k": "secrets",
+    "label": "Secrets live in",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "Plain HTTP on caf├⌐ Wi-Fi"
+ },
+ {
+  "id": "testing",
+  "h1": "Testing",
+  "head": "08. Shipping / Lesson 1 of 2 Testing 12 min Beginner 11 steps Knowing a change is safe before your users find out ΓÇö fast tests for the logic, a few slow ones for everything else.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "Is it safe?",
+   "By hand",
+   "Unit tests",
+   "Test doubles",
+   "Integration",
+   "Contracts",
+   "End-to-end",
+   "Pyramid",
+   "Flaky",
+   "Load & failure",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "feedback",
+    "label": "Feedback in",
+    "value": "1 day"
+   },
+   {
+    "k": "covers",
+    "label": "Tests cover",
+    "value": "what someone clicks"
+   },
+   {
+    "k": "escaped",
+    "label": "Bugs reaching users",
+    "value": "often"
+   }
+  ],
+  "guideH2": "Is this change safe?"
+ },
+ {
+  "id": "cicd",
+  "h1": "CI/CD & Deployments",
+  "head": "08. Shipping / Lesson 2 of 2 CI/CD & Deployments 13 min Intermediate 11 steps Getting every change to production quickly and safely ΓÇö and back out again just as quickly.",
+  "meta": [],
+  "stepCount": 11,
+  "steps": [
+   "By hand",
+   "Friday",
+   "CI",
+   "One artifact",
+   "CD",
+   "Blue-green",
+   "Canary",
+   "Migrations",
+   "Flags",
+   "Measure",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "deploys",
+    "label": "Deploys / day",
+    "value": "1 / week"
+   },
+   {
+    "k": "leadTime",
+    "label": "Commit ΓåÆ production",
+    "value": "2 weeks"
+   },
+   {
+    "k": "failRate",
+    "label": "Deploys that fail",
+    "value": "30%"
+   },
+   {
+    "k": "restore",
+    "label": "Time to restore",
+    "value": "4 h"
+   }
+  ],
+  "guideH2": "Shipping by hand"
+ },
+ {
+  "id": "hld-lld",
+  "h1": "HLD & LLD",
+  "head": "09. Whole Systems / Lesson 1 of 4 HLD & LLD 8 min Beginner 8 steps The same system at two zoom levels: the map of services, and the inside of one of them.",
+  "meta": [],
+  "stepCount": 8,
+  "steps": [
+   "Two levels",
+   "The map",
+   "Trade-offs",
+   "Zoom in",
+   "LLD decisions",
+   "Contracts",
+   "Top-down",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "zoom",
+    "label": "Zoom level",
+    "value": "whole system"
+   },
+   {
+    "k": "unit",
+    "label": "Building blocks",
+    "value": "services ┬╖ stores ┬╖ queues"
+   },
+   {
+    "k": "output",
+    "label": "You produce",
+    "value": "architecture diagram"
+   }
+  ],
+  "guideH2": "One system, two zoom levels"
+ },
+ {
+  "id": "design-url-shortener",
+  "h1": "Design a URL Shortener",
+  "head": "09. Whole Systems / Lesson 2 of 4 Design a URL Shortener 14 min Intermediate 12 steps A first end-to-end design: from a one-line brief to a system that serves billions of redirects.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "The brief",
+   "Numbers",
+   "First draft",
+   "Hash it?",
+   "Count it",
+   "Guessable",
+   "Cache",
+   "301 or 302",
+   "Storage",
+   "Clicks",
+   "Abuse",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "redirectMs",
+    "label": "Redirect time",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "dbQps",
+    "label": "Store lookups",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "codeKind",
+    "label": "Short codes",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "linksKept",
+    "label": "Links kept",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "The brief: a link shortener"
+ },
+ {
+  "id": "design-news-feed",
+  "h1": "Design a News Feed",
+  "head": "09. Whole Systems / Lesson 3 of 4 Design a News Feed 14 min Intermediate 12 steps Posts from everyone you follow, in 200 ms ΓÇö and the question of when to do the work.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "The brief",
+   "Numbers",
+   "Pull",
+   "Wrong side",
+   "Push",
+   "Ids only",
+   "Celebrity",
+   "Hybrid",
+   "Idle users",
+   "Scrolling",
+   "Cache lost",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "feedMs",
+    "label": "Feed load time",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "readWork",
+    "label": "Lookups per feed",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "fanout",
+    "label": "Feed writes per post",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "postDelay",
+    "label": "Post reaches followers",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "The brief: a home feed"
+ },
+ {
+  "id": "design-chat",
+  "h1": "Design a Chat System",
+  "head": "09. Whole Systems / Lesson 4 of 4 Design a Chat System 14 min Advanced 12 steps Twenty million open connections, and a promise: every message arrives, in order, exactly once.",
+  "meta": [],
+  "stepCount": 12,
+  "steps": [
+   "The brief",
+   "Numbers",
+   "One server",
+   "Where is Bob?",
+   "Registry",
+   "Store first",
+   "Offline",
+   "Duplicates",
+   "Groups",
+   "Presence",
+   "Gateway dies",
+   "Recap"
+  ],
+  "chips": [
+   {
+    "k": "deliverMs",
+    "label": "Delivery time",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "conns",
+    "label": "Open connections",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "canLoseMsg",
+    "label": "Can lose a message",
+    "value": "ΓÇö"
+   },
+   {
+    "k": "ordered",
+    "label": "Order guaranteed",
+    "value": "ΓÇö"
+   }
+  ],
+  "guideH2": "The brief: a chat app"
+ }
+]
