@@ -177,7 +177,9 @@ These can be reused without another broad probe.
 
 ### Missing evidence record
 
-[REPORT.md](REPORT.md) references `evidence-log.md`, which does not exist. Raw Evidence IDs are therefore not auditable against the local folder. The live REA inspection Evidence ID is recorded here for this audit.
+[REPORT.md](REPORT.md) references `evidence-log.md`, which is still absent. The complete retained REA session is now exported as [rea-session-evidence-bundle.json](evidence/rea-session-evidence-bundle.json) (19 records). It includes the static-analysis record `ev_bf31ccc8b8e9b2490711f625774b511c7b970e1c6fed4ce0bfa36e3aaa6d09a6` and its related analysis views.
+
+The analysis input is the saved [live-2026-11-25 artifact directory](evidence/live-2026-11-25), with recorded directory SHA-256 `e85b288ac4518f6bd54a5c63dac0385d9881b2d936d701c7f68b12c2aa836059`. The operation was `analyze_javascript_application` with `format: auto` and `integrity_policy: fail`. The record is static evidence only: one JavaScript source was parsed, the semantic graph is partial/truncated, and the inline JavaScript in `index.html` at line 37 was not analyzed. The exported bundle SHA-256 is `b60504b5858f619c85383f358eba99c0369e67402c31ff9db9eb534c98170f3d`.
 
 ---
 
